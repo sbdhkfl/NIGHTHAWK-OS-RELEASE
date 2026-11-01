@@ -6,10 +6,11 @@ the **Kali rolling package channel** added for security tooling.
 
 | Item | Value |
 |---|---|
-| Image file | `nighthawk-os-1.0-orangepi-zero3-arm64.img` (not included in this repository) |
-| Image size | 1,768,947,712 bytes (1.65 GiB, **1.77 GB** — under the 2 GB target) |
-| SHA256 | `126312ebe591737c114bf8b420f55bc0def6838de5588182ee515ffc77d26885` |
-| Format | raw disk image (flash directly, no extraction needed) |
+| Image file after extraction | `nighthawk-os-1.0-orangepi-zero3-arm64.img` |
+| Download | Get the compressed image archive from the **Assets** section of the [NIGHTHAWK OS 1.0 release](https://github.com/sbdhkfl/NIGHTHAWK-OS-RELEASE/releases) |
+| Extracted image size | 1,768,947,712 bytes (1.65 GiB, **1.77 GB**) |
+| SHA256 of extracted image | `126312ebe591737c114bf8b420f55bc0def6838de5588182ee515ffc77d26885` |
+| Format | Compressed download containing a raw disk image; extract before flashing |
 | Architecture | ARM64 / AArch64 |
 | SoC | Allwinner H618 (4x Cortex-A53) |
 | Kernel | Armbian `6.18.57-current-sunxi64` (unmodified) |
@@ -17,10 +18,9 @@ the **Kali rolling package channel** added for security tooling.
 | Packages | 565 |
 | Partition layout | MBR, partition 1 at sector 8192, ext4, label `nighthawk` |
 
-The raw disk image is intentionally excluded from this Git repository because
-it exceeds GitHub's 100 MB file limit. `SHA256SUMS` records the expected
-checksum for the image described here; the image must be obtained separately
-or rebuilt using the included build scripts.
+The downloadable archive is provided as a release asset because the raw disk
+image is too large for normal Git repository file uploads. The archive must be
+extracted to obtain the `.img` file. **Do not flash the archive itself.**
 
 ## What is included
 
@@ -52,11 +52,12 @@ be pulled explicitly with `apt-get install -t kali-rolling <pkg>`.
 
 ## Quick start
 
-1. Write the image to a microSD card (8 GB or larger) — see `FLASHING.md`.
-2. Insert the card, connect HDMI + USB keyboard, power on with a 5 V/3 A supply.
-3. The first boot resizes the root filesystem to the card and then opens the
-   NIGHTHAWK setup wizard on the console: create your user and set passwords.
-4. Log in at the LightDM greeter and use `nmtui` or the tray applet to join Wi-Fi.
+1. Download the compressed image archive from the release **Assets** section.
+2. Extract the archive (see [FLASHING.md](FLASHING.md) for Windows, macOS, and Linux instructions).
+3. Verify the extracted `.img` file using the SHA256 checksum in [FLASHING.md](FLASHING.md).
+4. Write the extracted image to a microSD card (8 GB or larger).
+5. Insert the card, connect HDMI + USB keyboard, and power on with a 5 V/3 A supply.
+6. Complete the first-boot setup wizard to create your user and set passwords.
 
 Full details: `FLASHING.md`, `HARDWARE-COMPATIBILITY.md`, `TROUBLESHOOTING.md`,
 and `BUILD-REPORT.md` (how it was built and exactly what was verified).
