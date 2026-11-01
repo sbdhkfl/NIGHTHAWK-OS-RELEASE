@@ -1,0 +1,119 @@
+=== phase3 start 2026-10-31T04:48:12Z ===
+[1] fetch Kali archive keyring (arm64)
+    installed -> /etc/apt/keyrings/kali-archive-keyring.gpg
+[2] write Kali source list (arm64, kali-rolling, non-free + non-free-firmware)
+    wrote /etc/apt/sources.list.d/kali.list
+# NIGHTHAWK OS - Kali Linux rolling repository (arm64)
+# Reused from the source Kali image's package management model.
+deb [signed-by=/etc/apt/keyrings/kali-archive-keyring.gpg] http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+[3] write apt pinning (Kali at 500; prefer Debian trixie base for stability, allow Kali for tools)
+    wrote /etc/apt/preferences.d/nighthawk
+[4] apt-get update in chroot
+Ign:6 http://deb.debian.org/debian trixie-backports InRelease
+Ign:7 http://beta.armbian.com trixie InRelease
+Err:1 https://github.armbian.com/configng stable InRelease
+  System error resolving 'github.armbian.com:https' - getaddrinfo (16: Device or resource busy)
+Err:4 http://http.kali.org/kali kali-rolling InRelease
+  System error resolving 'http.kali.org:http' - getaddrinfo (16: Device or resource busy)
+Err:2 http://security.debian.org trixie-security InRelease
+  System error resolving 'security.debian.org:http' - getaddrinfo (16: Device or resource busy)
+Err:6 http://deb.debian.org/debian trixie-backports InRelease
+  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+Err:5 http://deb.debian.org/debian trixie-updates InRelease
+  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+Err:3 http://deb.debian.org/debian trixie InRelease
+  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+Err:7 http://beta.armbian.com trixie InRelease
+  System error resolving 'beta.armbian.com:http' - getaddrinfo (16: Device or resource busy)
+Reading package lists...
+W: Failed to fetch https://github.armbian.com/configng/dists/stable/InRelease  System error resolving 'github.armbian.com:https' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://beta.armbian.com/dists/trixie/InRelease  System error resolving 'beta.armbian.com:http' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://deb.debian.org/debian/dists/trixie/InRelease  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://deb.debian.org/debian/dists/trixie-updates/InRelease  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://deb.debian.org/debian/dists/trixie-backports/InRelease  System error resolving 'deb.debian.org:http' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://security.debian.org/dists/trixie-security/InRelease  System error resolving 'security.debian.org:http' - getaddrinfo (16: Device or resource busy)
+W: Failed to fetch http://http.kali.org/kali/dists/kali-rolling/InRelease  System error resolving 'http.kali.org:http' - getaddrinfo (16: Device or resource busy)
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+[5] verify Kali + Debian + Armbian repos all resolvable
+     release a=now
+ 990 http://security.debian.org trixie-security/contrib arm64 Packages
+     release v=13,o=Debian,a=stable-security,n=trixie-security,l=Debian-Security,c=contrib,b=arm64
+     origin security.debian.org
+ 990 http://security.debian.org trixie-security/main arm64 Packages
+     release v=13,o=Debian,a=stable-security,n=trixie-security,l=Debian-Security,c=main,b=arm64
+     origin security.debian.org
+ 100 http://deb.debian.org/debian trixie-backports/non-free-firmware arm64 Packages
+     release o=Debian Backports,a=stable-backports,n=trixie-backports,l=Debian Backports,c=non-free-firmware,b=arm64
+     origin deb.debian.org
+ 100 http://deb.debian.org/debian trixie-backports/non-free arm64 Packages
+     release o=Debian Backports,a=stable-backports,n=trixie-backports,l=Debian Backports,c=non-free,b=arm64
+     origin deb.debian.org
+ 100 http://deb.debian.org/debian trixie-backports/contrib arm64 Packages
+     release o=Debian Backports,a=stable-backports,n=trixie-backports,l=Debian Backports,c=contrib,b=arm64
+     origin deb.debian.org
+ 100 http://deb.debian.org/debian trixie-backports/main arm64 Packages
+     release o=Debian Backports,a=stable-backports,n=trixie-backports,l=Debian Backports,c=main,b=arm64
+     origin deb.debian.org
+ 990 http://deb.debian.org/debian trixie-updates/main arm64 Packages
+     release v=13-updates,o=Debian,a=stable-updates,n=trixie-updates,l=Debian,c=main,b=arm64
+     origin deb.debian.org
+ 990 http://deb.debian.org/debian trixie/non-free-firmware arm64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=non-free-firmware,b=arm64
+     origin deb.debian.org
+ 990 http://deb.debian.org/debian trixie/non-free arm64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=non-free,b=arm64
+     origin deb.debian.org
+ 990 http://deb.debian.org/debian trixie/contrib arm64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=contrib,b=arm64
+     origin deb.debian.org
+ 990 http://deb.debian.org/debian trixie/main arm64 Packages
+     release v=13.7,o=Debian,a=stable,n=trixie,l=Debian,c=main,b=arm64
+     origin deb.debian.org
+ 500 http://beta.armbian.com trixie/trixie-desktop all Packages
+     release o=Armbian,a=trixie,n=trixie,l=Armbian,c=trixie-desktop,b=all
+     origin beta.armbian.com
+ 500 http://beta.armbian.com trixie/trixie-desktop arm64 Packages
+     release o=Armbian,a=trixie,n=trixie,l=Armbian,c=trixie-desktop,b=arm64
+     origin beta.armbian.com
+[6] confirm a Kali-only security package is visible (arm64)
+lynis:
+  Installed: (none)
+  Candidate: 3.1.4-1
+  Version table:
+     3.1.4-1 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+ufw:
+  Installed: (none)
+  Candidate: 0.36.2-9
+  Version table:
+     0.36.2-9 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+nmap:
+  Installed: (none)
+  Candidate: 7.95+dfsg-3
+  Version table:
+     7.98+dfsg-1~bpo13+1 100
+        100 http://deb.debian.org/debian trixie-backports/main arm64 Packages
+     7.95+dfsg-3 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+tcpdump:
+  Installed: (none)
+  Candidate: 4.99.5-2
+  Version table:
+     4.99.5-2 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+firefox-esr:
+  Installed: (none)
+  Candidate: 153.5.1esr-1~deb13u1
+  Version table:
+     153.5.1esr-1~deb13u1 990
+        990 http://security.debian.org trixie-security/main arm64 Packages
+     140.15.0esr-1~deb13u1 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+xfce4-session:
+  Installed: (none)
+  Candidate: 4.20.2-2
+  Version table:
+     4.20.2-2 990
+        990 http://deb.debian.org/debian trixie/main arm64 Packages
+=== phase3 done 2026-10-31T04:49:11Z ===

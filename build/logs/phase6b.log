@@ -1,0 +1,31 @@
+rootfs used=1386500461 partition=1764753408 total=1768947712
+label: dos
+label-id: 0x59037350
+device: /home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img
+unit: sectors
+sector-size: 512
+
+/home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img1 : start=        8192, size=     3446784, type=83
+=== rsync ===
+=== point boot at new rootfs UUID ===
+new rootfs UUID=e965c23d-4653-43f2-a18a-680ef32d6420
+6:rootdev=UUID=e965c23d-4653-43f2-a18a-680ef32d6420
+UUID=e965c23d-4653-43f2-a18a-680ef32d6420 / ext4 defaults,commit=120,errors=remount-ro 0 1
+tmpfs /tmp tmpfs defaults,nosuid 0 0
+=== boot payload ===
+OK      /boot/boot.scr
+OK      /boot/Image
+OK      /boot/uInitrd
+OK      /boot/dtb/allwinner/sun50i-h618-orangepi-zero3.dtb
+1.4G	/mnt/nh
+/dev/loop0p1    1.6G  1.4G  201M  88% /mnt/nh
+=== fsck ===
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+nighthawk: 34401/107744 files (0.2% non-contiguous), 375468/430848 blocks
+=== result ===
+-rw-r----- 1 root root 1768947712 Nov  1 00:50 /home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img
+126312ebe591737c114bf8b420f55bc0def6838de5588182ee515ffc77d26885  /home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img
+0000000 026  \0  \0 352   e   G   O   N
+0000010

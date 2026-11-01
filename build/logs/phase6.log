@@ -1,0 +1,15 @@
+rootfs used=1386500461 partition=1764753408 total=1768947712
+=== boot region (MBR + U-Boot, first 4 MiB of pristine Armbian image) ===
+=== partition table ===
+label: dos
+label-id: 0x59037350
+device: /home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img
+unit: sectors
+sector-size: 512
+
+/home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img1 : start=        8192, size=     3446784, type=83
+=== filesystem ===
+=== copy rootfs ===
+rsync: [receiver] write failed on "/mnt/nh/proc/kcore": No space left on device (28)
+rsync error: error in file IO (code 11) at receiver.c(660) [receiver=3.5.1]
+rsync: [sender] write error: Broken pipe (32)

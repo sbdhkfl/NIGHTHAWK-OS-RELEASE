@@ -1,0 +1,97 @@
+=== image ===
+-rw-r----- 1 root root 1768947712 Nov  1 00:50 /home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img
+
+/home/kali/nh-build/nighthawk-os-1.0-orangepi-zero3-arm64.img1 : start=        8192, size=     3446784, type=83
+=== identity ===
+PRETTY_NAME="NIGHTHAWK OS 1.0 (trixie)"
+VERSION_ID="1.0"
+ID=nighthawk
+ID_LIKE=debian
+nighthawk
+NIGHTHAWK OS 1.0
+Base:      Armbian (Debian 13 trixie) + Kali rolling package channel
+Board:     Orange Pi Zero 3 (Allwinner H618, ARM64)
+Kernel:    6.18.57-current-sunxi64
+Desktop:   XFCE4 (minimal) + LightDM
+Toolkit:   nmap, lynis, tcpdump, ufw, dnsutils, python3
+=== arch sanity (all ELF must be ARM aarch64) ===
+x86-64 ELF files: 0
+ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=8b002514075d8f08213c3f263a647d4e7c5c420e, for GNU/Linux 3.7.0, stripped
+ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=530bd24c3675753085f91d0176510aeb65d6189d, for GNU/Linux 3.7.0, stripped
+=== desktop stack ===
+OK      /usr/sbin/lightdm
+OK      /usr/bin/startxfce4
+OK      /usr/bin/thunar
+OK      /usr/bin/xfce4-terminal
+OK      /usr/bin/xfwm4
+OK      /usr/bin/xfdesktop
+OK      /usr/sbin/NetworkManager
+OK      /usr/bin/nm-applet
+OK      /usr/bin/lxpolkit
+OK      /usr/bin/btop
+OK      /usr/bin/firefox-esr
+OK      /usr/sbin/sshd
+OK      /usr/bin/nmap
+MISSING /usr/bin/lynis
+=== service wiring ===
+/lib/systemd/system/lightdm.service
+/usr/lib/systemd/system/NetworkManager.service
+/usr/lib/systemd/system/armbian-zram-config.service
+armbian-firstrun.service armbian-resize-filesystem.service aw859a-bluetooth.service aw859a-wifi.service console-setup.service cron.service e2scrub_reap.service NetworkManager.service remote-fs.target rsyslog.service ssh.service ufw.service 
+=== networkd/wpa ===
+systemd-networkd-wait-online.service.d
+=== boot chain ===
+verbosity=1
+overlay_prefix=sun50i-h616
+rootdev=UUID=e965c23d-4653-43f2-a18a-680ef32d6420
+UUID=e965c23d-4653-43f2-a18a-680ef32d6420 / ext4 defaults,commit=120,errors=remount-ro 0 1
+tmpfs /tmp tmpfs defaults,nosuid 0 0
+boot payload OK
+=== branding ===
+OK      /usr/share/backgrounds/nighthawk-wallpaper.png
+OK      /usr/share/themes/Nighthawk/gtk-3.0/gtk.css
+OK      /usr/share/icons/NightHawk/index.theme
+OK      /etc/motd
+OK      /etc/profile.d/nighthawk.sh
+OK      /etc/lightdm/lightdm.conf
+OK      /etc/lightdm/lightdm-gtk-greeter.conf
+OK      /etc/sysctl.d/99-nighthawk.conf
+OK      /etc/ssh/sshd_config.d/99-nighthawk.conf
+OK      /etc/firefox-esr/policies/policies.json
+OK      /usr/lib/firefox-esr/nighthawk.cfg
+OK      /usr/local/bin/nighthawk
+OK      /root/.not_logged_in_yet
+=== kali integration ===
+# NIGHTHAWK OS - Kali Linux rolling repository (arm64)
+# Reused from the source Kali image's package management model.
+deb [signed-by=/etc/apt/keyrings/kali-archive-keyring.gpg] http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+-rw-r--r-- 1 root root 1193 Oct 31 00:48 /mnt/v/etc/apt/keyrings/kali-archive-keyring.gpg
+# NIGHTHAWK OS - repository compatibility pinning
+# Base system is Debian 13 (trixie). Kali rolling is used for security tooling.
+# Keep Debian at 990 for core libs/ABI stability; allow Kali at 500 so
+# security tools can be pulled from Kali when requested explicitly (-t kali-rolling).
+Package: *
+Pin: release o=Debian
+Pin-Priority: 990
+
+Package: *
+Pin: release o=Kali
+Pin-Priority: 500
+
+Package: *
+Pin: release a=trixie-security
+Pin-Priority: 990
+=== packages ===
+565
+root password state: $y$...
+=== first boot wiring ===
+# NIGHTHAWK OS - automatic first boot configuration
+# Applied by the Armbian first boot preset mechanism (see docs).
+# SECURITY: no default accounts or passwords are preset. The interactive
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --autologin root --noclear %I $TERM
+=== disk usage in image ===
+/dev/loop0p1    1.6G  1.4G  201M  88% /mnt/v
+1.4G	/mnt/v
+=== verification complete ===

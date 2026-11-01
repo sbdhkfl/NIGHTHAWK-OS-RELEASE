@@ -1,0 +1,118 @@
+=== debian.sources ===
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie trixie-updates trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: http://security.debian.org/
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+=== armbian.sources ===
+Types: deb
+URIs: http://beta.armbian.com
+Suites: trixie
+Components: main trixie-utils trixie-desktop
+Signed-By: /usr/share/keyrings/armbian-archive-keyring.gpg
+=== armbian-config.sources ===
+Types: deb
+URIs: https://github.armbian.com/configng
+Suites: stable
+Components: main
+Signed-By: /usr/share/keyrings/armbian.gpg
+=== NetworkManager conf ===
+/mnt/armbian/etc/NetworkManager:
+conf.d
+
+/mnt/armbian/etc/NetworkManager/conf.d:
+zz-10-override-wifi-random-mac-disable.conf
+zz-20-override-wifi-powersave-disable.conf
+cat: /mnt/armbian/etc/NetworkManager/NetworkManager.conf: No such file or directory
+=== NM conf.d ===
+[connection]
+wifi.mac-address-randomization=1
+
+[device]
+wifi.scan-rand-mac-address=no
+[connection]
+wifi.powersave = 2
+=== NM system-connections ===
+ls: cannot access '/mnt/armbian/etc/NetworkManager/system-connections/': No such file or directory
+=== policykit rules (nm) ===
+ls: cannot access '/mnt/armbian/etc/polkit-1/localauthority/50-local.d/': No such file or directory
+cat: '/mnt/armbian/etc/polkit-1/localauthority/50-local.d/*network*': No such file or directory
+=== firmware KEEP candidates (non-qcom/ath/intel/mediatek/etc) ===
+2.6M	/mnt/armbian/lib/firmware/uwe5622
+912K	/mnt/armbian/lib/firmware/uwe5621ds
+0	/mnt/armbian/lib/firmware/wcnmodem.bin
+0	/mnt/armbian/lib/firmware/regulatory.db
+/mnt/armbian/lib/firmware/eagle_fw_ate_config_v19.bin
+/mnt/armbian/lib/firmware/eagle_fw_first_init_v19.bin
+/mnt/armbian/lib/firmware/eagle_fw_second_init_v19.bin
+/mnt/armbian/lib/firmware/fw_bcm43455c0_ag_apsta.bin
+/mnt/armbian/lib/firmware/fw_bcm43455c0_ag.bin
+/mnt/armbian/lib/firmware/fw_bcm43455c0_ag_p2p.bin
+/mnt/armbian/lib/firmware/fw_bcm43456c5_ag_apsta.bin
+/mnt/armbian/lib/firmware/fw_bcm43456c5_ag.bin
+/mnt/armbian/lib/firmware/fw_bcm43456c5_ag_p2p.bin
+/mnt/armbian/lib/firmware/fw_bcm4359c0_ag.bin
+/mnt/armbian/lib/firmware/hinlink-h88k-240x135-lcd.bin
+/mnt/armbian/lib/firmware/mt7601.bin
+/mnt/armbian/lib/firmware/mt7601u.bin
+/mnt/armbian/lib/firmware/mt7610u.bin
+/mnt/armbian/lib/firmware/mt7662.bin
+/mnt/armbian/lib/firmware/mt7662_rom_patch.bin
+/mnt/armbian/lib/firmware/nvram_ap6255.txt
+/mnt/armbian/lib/firmware/nvram_ap6256.txt
+/mnt/armbian/lib/firmware/nvram_ap6398s.txt
+/mnt/armbian/lib/firmware/regulatory.db
+/mnt/armbian/lib/firmware/rt2870.bin
+/mnt/armbian/lib/firmware/ssv6051-sw.bin
+/mnt/armbian/lib/firmware/ssv6x5x-sw.bin
+/mnt/armbian/lib/firmware/v4l-coda960-imx6dl.bin
+/mnt/armbian/lib/firmware/v4l-coda960-imx6q.bin
+/mnt/armbian/lib/firmware/v4l-coda980-rtd1295.bin
+/mnt/armbian/lib/firmware/v4l-coda980-sg2000.bin
+/mnt/armbian/lib/firmware/wcnmodem.bin
+=== bluetooth firmware (H618 BT via uwe5622) ===
+/mnt/armbian/lib/firmware/uwe5622
+=== overlays dir (dtbo) ===
+README.sun50i-a64-overlays
+README.sun50i-h5-overlays
+sun50i-a64-fixup.scr
+sun50i-a64-i2c0.dtbo
+sun50i-a64-i2c1.dtbo
+sun50i-a64-pine64-7inch-lcd.dtbo
+sun50i-a64-pps-gpio.dtbo
+sun50i-a64-spi-add-cs1.dtbo
+sun50i-a64-spi-jedec-nor.dtbo
+sun50i-a64-spi-spidev.dtbo
+sun50i-a64-uart1.dtbo
+sun50i-a64-uart2.dtbo
+sun50i-a64-uart3.dtbo
+sun50i-a64-uart4.dtbo
+sun50i-a64-w1-gpio.dtbo
+sun50i-h5-analog-codec.dtbo
+sun50i-h5-cir.dtbo
+sun50i-h5-cpu-clock-1.0GHz-1.1v.dtbo
+sun50i-h5-cpu-clock-1.2GHz-1.3v.dtbo
+sun50i-h5-cpu-clock-1.3GHz-1.3v.dtbo
+=== how many dtbo ===
+109
+=== boot/dtb total size ===
+0	/mnt/armbian/boot/dtb
+=== sudoers ===
+-r--r----- 1 root root 1714 Apr 11  2026 /mnt/armbian/etc/sudoers
+
+/mnt/armbian/etc/sudoers.d/:
+total 4
+-r--r----- 1 root root 1068 Apr 11  2026 README
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Defaults	use_pty
+root	ALL=(ALL:ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+@includedir /etc/sudoers.d

@@ -1,0 +1,125 @@
+--- / ---
+total 88
+drwxr-xr-x 19 root root  4096 Oct 23 12:02 .
+drwxr-xr-x  3 root root  4096 Oct 31 00:01 ..
+lrwxrwxrwx  1 root root     7 Jul 17 13:05 bin -> usr/bin
+drwxr-xr-x  3 root root  4096 Oct 23 12:03 boot
+drwxr-xr-x  2 root root  4096 Jul 17 13:05 dev
+drwxr-xr-x 75 root root  4096 Oct 23 12:02 etc
+drwxr-xr-x  2 root root  4096 Jul 17 13:05 home
+lrwxrwxrwx  1 root root    39 Oct 23 12:01 initrd.img -> boot/initrd.img-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root    39 Oct 23 12:01 initrd.img.old -> boot/initrd.img-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root     7 Jul 17 13:05 lib -> usr/lib
+drwx------  2 root root 16384 Oct 23 12:02 lost+found
+drwxr-xr-x  2 root root  4096 Oct 21 06:54 media
+drwxr-xr-x  2 root root  4096 Oct 21 06:54 mnt
+drwxr-xr-x  2 root root  4096 Oct 21 06:54 opt
+drwxr-xr-x  2 root root  4096 Jul 17 13:05 proc
+drwx------  2 root root  4096 Oct 23 12:01 root
+drwxr-xr-x  4 root root  4096 Oct 23 12:02 run
+lrwxrwxrwx  1 root root     8 Jul 17 13:05 sbin -> usr/sbin
+drwxrwxr-x  2 root root  4096 Oct 23 12:00 selinux
+drwxr-xr-x  2 root root  4096 Oct 21 06:54 srv
+drwxr-xr-x  2 root root  4096 Jul 17 13:05 sys
+drwxrwxrwt  2 root root  4096 Oct 21 07:10 tmp
+drwxr-xr-x 11 root root  4096 Oct 21 06:54 usr
+drwxr-xr-x 12 root root  4096 Oct 23 12:00 var
+lrwxrwxrwx  1 root root    36 Oct 23 12:01 vmlinuz -> boot/vmlinuz-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root    36 Oct 23 12:01 vmlinuz.old -> boot/vmlinuz-6.18.57-current-sunxi64
+--- /boot ---
+total 74372
+drwxr-xr-x  3 root root     4096 Oct 23 12:03 .
+drwxr-xr-x 19 root root     4096 Oct 23 12:02 ..
+-rw-r--r--  1 1003 1003      156 Oct 23 12:02 armbianEnv.txt
+-rw-r--r--  1 root root   230454 Oct 23 12:01 boot.bmp
+-rw-r--r--  1 1003 1003     4569 Oct 23 12:01 boot.cmd
+-rw-r--r--  1 root root     4641 Oct 23 12:02 boot.scr
+-rw-r--r--  1 root root   242759 Oct 23 04:58 config-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root       27 Oct 23 12:01 dtb -> dtb-6.18.57-current-sunxi64
+drwxr-xr-x  3 root root     4096 Oct 23 12:01 dtb-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root       31 Oct 23 12:01 Image -> vmlinuz-6.18.57-current-sunxi64
+-rw-r--r--  1 root root 17139006 Oct 23 12:02 initrd.img-6.18.57-current-sunxi64
+-rw-r--r--  1 root root        0 Oct 23 12:01 .next
+-rw-r--r--  1 root root  6104082 Oct 23 04:58 System.map-6.18.57-current-sunxi64
+lrwxrwxrwx  1 root root       31 Oct 23 12:03 uInitrd -> uInitrd-6.18.57-current-sunxi64
+-rw-r--r--  1 root root 17139070 Oct 23 12:03 uInitrd-6.18.57-current-sunxi64
+-rw-r--r--  1 root root 35252736 Oct 23 04:58 vmlinuz-6.18.57-current-sunxi64
+--- /boot/extlinux ---
+ls: cannot access '/mnt/armbian/boot/extlinux': No such file or directory
+--- extlinux.conf ---
+cat: /mnt/armbian/boot/extlinux/extlinux.conf: No such file or directory
+--- extlinux/*.conf ---
+cat: '/mnt/armbian/boot/extlinux/*.conf': No such file or directory
+--- kernel/initrd ---
+ls: cannot access '/mnt/armbian/boot/uImage': No such file or directory
+ls: cannot access '/mnt/armbian/boot/zImage': No such file or directory
+ls: cannot access '/mnt/armbian/boot/initramfs*': No such file or directory
+-rw-r--r-- 1 root root 17139006 Oct 23 12:02 /mnt/armbian/boot/initrd.img-6.18.57-current-sunxi64
+-rw-r--r-- 1 root root 35252736 Oct 23 04:58 /mnt/armbian/boot/vmlinuz-6.18.57-current-sunxi64
+--- modules ---
+/mnt/armbian/lib/modules/6.18.57-current-sunxi64
+--- DTB h618 ---
+ls: cannot access '/mnt/armbian/lib/modules/*/dtb/allwinner/sun50i-h618-orangepi-zero3.dtb': No such file or directory
+-rw-r--r-- 1 root root 46101 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-bananapi-m4-berry.dtb
+-rw-r--r-- 1 root root 47175 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-bananapi-m4-zero.dtb
+-rw-r--r-- 1 root root 47596 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-bananapi-m4-zero-rev-2.dtb
+-rw-r--r-- 1 root root 47360 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-kickpi-k2b.dtb
+-rw-r--r-- 1 root root 47453 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-kickpi-k2b-v2.dtb
+-rw-r--r-- 1 root root 44410 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-longanpi-3h.dtb
+-rw-r--r-- 1 root root 46827 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-mellow-fly-c5.dtb
+-rw-r--r-- 1 root root 46573 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-orangepi-zero2w.dtb
+-rw-r--r-- 1 root root 45817 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-orangepi-zero3.dtb
+-rw-r--r-- 1 root root 44462 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-transpeed-8k618-t.dtb
+-rw-r--r-- 1 root root 46610 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-walnutpi-1b.dtb
+-rw-r--r-- 1 root root 46903 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-walnutpi-box.dtb
+-rw-r--r-- 1 root root 46582 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-walnutpi-zerow.dtb
+-rw-r--r-- 1 root root 44527 Oct 23 04:59 /mnt/armbian/boot/dtb/allwinner/sun50i-h618-yuzukihd-chameleon.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-kickpi-k2b.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-longanpi-3h.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-mellow-fly-c5.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-kickpi-k2b-v2.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-bananapi-m4-zero-rev-2.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-yuzukihd-chameleon.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-orangepi-zero3.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-bananapi-m4-berry.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-walnutpi-box.dtb
+/mnt/armbian/usr/lib/linux-image-6.18.57-current-sunxi64/allwinner/sun50i-h618-walnutpi-1b.dtb
+--- firmware ---
+491M	/mnt/armbian/lib/firmware
+--- fstab ---
+UUID=7da1ad79-ac6f-4981-9826-8f2295709adf / ext4 defaults,commit=120,errors=remount-ro 0 1
+tmpfs /tmp tmpfs defaults,nosuid 0 0
+--- armbian-release ---
+# PLEASE DO NOT EDIT THIS FILE
+BOARD=orangepizero3
+BOARD_NAME="Orange Pi Zero3"
+BOARDFAMILY=sun50iw9
+BUILD_REPOSITORY_URL=http://172.17.0.1:8000/armbian/build
+BUILD_REPOSITORY_COMMIT=fac57a02f
+LINUXFAMILY=sunxi64
+ARCH=arm64
+BOOT_SOC=
+IMAGE_TYPE=nightly
+BOARD_TYPE=csc
+INITRD_ARCH=arm64
+KERNEL_IMAGE_TYPE=Image
+KERNEL_TARGET=current,edge
+KERNEL_TEST_TARGET=current
+FORCE_BOOTSCRIPT_UPDATE=yes
+FORCE_UBOOT_UPDATE=
+OVERLAY_DIR="/boot/dtb/allwinner/overlay"
+VENDOR="Armbian_community"
+VENDORCOLOR="247;16;0"
+VENDORDOCS="https://docs.armbian.com"
+VENDORURL="https://github.com/armbian/build"
+VENDORSUPPORT="https://community.armbian.com/"
+VENDORBUGS="https://github.com/armbian/community/issues"
+BOOTSCRIPT_FORCE_UPDATE="yes"
+BOOTSCRIPT_DST="boot.cmd"
+VERSION=26.11.0-trunk.108
+REVISION=26.11.0-trunk.108
+--- scr/cmd ---
+-rw-r--r-- 1 1003 1003 4569 Oct 23 12:01 /mnt/armbian/boot/boot.cmd
+-rw-r--r-- 1 root root 4641 Oct 23 12:02 /mnt/armbian/boot/boot.scr
+--- rootfs size ---
+1.3G	/mnt/armbian

@@ -1,0 +1,22 @@
+=== identity ===
+=== overlay files ===
+=== lightdm greeter ===
+=== xfce defaults (skel) ===
+=== security helper scripts ===
+=== first boot wizard ===
+=== services ===
+Removed '/home/kali/nh-build/rootfs/etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service'.
+Removed '/home/kali/nh-build/rootfs/etc/systemd/system/dbus-org.freedesktop.network1.service'.
+=== identity of ssh keys: regenerate on first boot ===
+=== locales/keyboard ===
+=== verification ===
+OK      etc/os-release
+OK      etc/motd
+OK      etc/lightdm/lightdm.conf
+OK      usr/share/backgrounds/nighthawk-wallpaper.png
+OK      usr/share/themes/Nighthawk/gtk-3.0/gtk.css
+OK      usr/local/bin/nighthawk
+OK      root/.not_logged_in_yet
+=== symlinks enabled ===
+armbian-firstrun.service armbian-resize-filesystem.service aw859a-bluetooth.service aw859a-wifi.service console-setup.service cron.service e2scrub_reap.service NetworkManager.service remote-fs.target rsyslog.service ssh.service ufw.service 
+=== done Sun Nov  1 12:46:50 AM EDT 2026 ===

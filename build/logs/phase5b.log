@@ -1,0 +1,11 @@
+=== before: 1714464587 bytes ===
+find: cannot delete ‘/home/kali/nh-build/rootfs/usr/share/doc/ca-certificates/examples/ca-certificates-local/debian’: Directory not empty
+find: cannot delete ‘/home/kali/nh-build/rootfs/usr/share/doc/ca-certificates/examples/ca-certificates-local’: Directory not empty
+find: cannot delete ‘/home/kali/nh-build/rootfs/usr/share/doc/ca-certificates/examples’: Directory not empty
+=== after: 1386500461 bytes ===
+=== top dirs ===
+1.3G	/home/kali/nh-build/rootfs/usr
+28M	/home/kali/nh-build/rootfs/var
+4.2M	/home/kali/nh-build/rootfs/etc
+78M	/home/kali/nh-build/rootfs/boot
+=== done ===

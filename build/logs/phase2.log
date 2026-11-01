@@ -1,0 +1,18 @@
+=== phase2 start 2026-10-31T04:46:03Z ===
+[1] attach source image
+    loop=/dev/loop0
+[2] prepare workdir /home/kali/nh-build/rootfs
+[3] copy rootfs (rsync -aHAX, numeric ids)
+[4] detach source image
+[5] firmware trim (keep only H618-relevant blobs)
+    firmware: 491MB -> 4MB
+[6] rootfs size after trim
+    rootfs = 795MB
+[7] chroot mounts
+[8] DNS for chroot
+[9] verify chroot can execute arm64 binaries (qemu binfmt)
+  chroot OK: aarch64
+[10] debootstrap kali-rolling variant availability (for Kali repo/keyring plan)
+  no kali keyring in Armbian base (expected)
+=== phase2 done 2026-10-31T04:47:28Z ===
+LOG=/home/kali/nh-build/phase2.log

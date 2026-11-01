@@ -1,0 +1,670 @@
+=== install start Sat Oct 31 11:34:58 PM EDT 2026 ===
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  cpp cpp-14 cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu desktop-file-utils
+  exo-utils gdal-data gdal-plugins libabsl20240722 libaec0 libaom3
+  libarmadillo14 libarpack2t64 libavif16 libayatana-appindicator3-1
+  libayatana-ido3-0.4-0 libayatana-indicator3-7 libblosc1 libbluetooth3
+  libcfitsio10t64 libcharls2 libdav1d7 libdbusmenu-glib4 libdbusmenu-gtk3-4
+  libde265-0 libdisplay-info2 libdouble-conversion3 libdrm-amdgpu1
+  libdrm-common libdrm2 libduktape207 libegl-mesa0 libegl1 libevdev2 libexif12
+  libexo-2-0 libexo-common libfontenc1 libfreexl1 libfyba0t64 libgarcon-1-0
+  libgarcon-common libgarcon-gtk3-1-0 libgav1-1 libgbm1 libgck-2-2 libgcr-4-4
+  libgdal36 libgdcm3.0t64 libgeos-c1t64 libgeos3.13.1 libgeotiff5 libgfortran5
+  libgif7 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0 libgpgme11t64
+  libgpgmepp6t64 libgtk-layer-shell0 libgudev-1.0-0 libhdf4-0-alt libhdf5-310
+  libhdf5-hl-310 libheif-plugin-dav1d libheif-plugin-libde265 libheif1
+  libhwloc15 libice6 libicu76 libimath-3-1-29t64 libimobiledevice-1.0-6
+  libimobiledevice-glue-1.0-0 libinput-bin libinput10 libisl23 libjansson4
+  libkmlbase1t64 libkmldom1t64 libkmlengine1t64 liblapack3
+  liblightdm-gobject-1-0 libllvm19 libltdl7 libmariadb3 libmd4c0
+  libminizip1t64 libmm-glib0 libmpc3 libmpfr6 libmtdev1t64 libndp0 libnetcdf22
+  libnm0 libnma-common libnma0 libnotify4 libnss3 libodbc2 libodbcinst2
+  libogdi4.1 libopencv-core410 libopencv-imgcodecs410 libopencv-imgproc410
+  libopenexr-3-1-30 libopenjp2-7 libpciaccess0 libpcre2-16-0 libplist-2.0-4
+  libpolkit-agent-1-0 libpolkit-gobject-1-0 libpolkit-qt5-1-1 libpoppler147
+  libpq5 libproj25 libqhull-r8.0 libqrencode4 libqt5core5t64 libqt5dbus5t64
+  libqt5gui5t64 libqt5network5t64 libqt5widgets5t64 librav1e0.7 librttopo1
+  libsecret-1-0 libsecret-common libsensors-config libsensors5 libsm6
+  libsnappy1v5 libsocket++1 libspatialite8t64 libstartup-notification0
+  libsvtav1enc2 libsz2 libtbb12 libtbbbind-2-5 libtbbmalloc2 libteamdctl0
+  libthunarx-3-0 libunwind8 libupower-glib3 liburiparser1 libusbmuxd-2.0-7
+  libutempter0 libvte-2.91-0 libvte-2.91-common libvulkan1 libwacom-common
+  libwacom9 libwayland-server0 libwnck-3-0 libwnck-3-common libxaw7
+  libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1
+  libxcb-present0 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-sync1
+  libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1
+  libxcvt0 libxerces-c3.2t64 libxfce4panel-2.0-4 libxfce4ui-2-0
+  libxfce4ui-common libxfce4util-common libxfce4util7 libxfce4windowing-0-0
+  libxfce4windowing-common libxfconf-0-3 libxfont2 libxkbcommon-x11-0
+  libxkbfile1 libxklavier16 libxmu6 libxmuu1 libxpm4 libxpresent1 libxres1
+  libxshmfence1 libxt6t64 libxtst6 libxxf86vm1 libyuv0 libz3-4 mariadb-common
+  mesa-libgallium mysql-common network-manager-applet nm-connection-editor
+  proj-data python3-urllib3 sgml-base thunar-data ukui-polkit unixodbc-common
+  upower x11-common x11-xkb-utils x11-xserver-utils xfce4-clipman
+  xfce4-helpers xfce4-power-manager-data xfconf xfdesktop4-data xml-core
+  xserver-common
+Suggested packages:
+  cpp-doc gcc-14-locales cpp-14-doc geotiff-bin gdal-bin libgeotiff-epsg
+  libhdf4-alt-dev hdf4-tools libheif-plugin-ffmpegdec libheif-plugin-jpegdec
+  libheif-plugin-jpegenc libheif-plugin-j2kdec libheif-plugin-j2kenc
+  libheif-plugin-kvazaar libheif-plugin-rav1e libheif-plugin-svtenc
+  libusbmuxd-tools notification-daemon odbc-postgresql tdsodbc ogdi-bin
+  pciutils gpgsm proj-bin qgnomeplatform-qt5 qt5-image-formats-plugins
+  lm-sensors libwacom-bin devhelp iso-codes accountsservice xserver-xephyr
+  libteam-utils network-manager-openconnect-gnome
+  network-manager-openvpn-gnome network-manager-vpnc-gnome
+  network-manager-pptp-gnome python3-brotli python3-cryptography python3-idna
+  python3-openssl python3-socks sgml-base-doc thunar-archive-plugin
+  thunar-media-tags-plugin gvfs-backends biometric-auth nickle cairo-5c
+  xorg-docs-core libavif-gdk-pixbuf libjxl-gdk-pixbuf webp-pixbuf-loader
+  fortune-mod xfconf-gsettings-backend xfce4 debhelper xfonts-100dpi
+  | xfonts-75dpi xfonts-scalable
+Recommended packages:
+  liburi-perl proj-bin dirmngr gpg-agent gpg-wks-client gpgsm
+  libheif-plugin-x265 libheif-plugin-aomenc libhwloc-plugins usbmuxd
+  modemmanager libodbccr2 poppler-data qttranslations5-l10n libqt5svg5
+  qt5-gtk-platformtheme qtwayland5 mesa-vulkan-drivers | vulkan-icd
+  libxfce4util-bin xserver-xorg desktop-base gnome-themes-extra ppp
+  dnsmasq-base network-manager-l10n notification-daemon gnome-keyring
+  gnome-icon-theme mobile-broadband-provider-info iso-codes gvfs thunar-volman
+  tumbler udisks2 xdg-user-dirs xfce4-power-manager-plugins librsvg2-common
+  libglib2.0-bin light-locker | xfce4-screensaver | xscreensaver
+  | mate-screensaver colord x11-utils xiccd xfonts-base xauth xcvt
+The following NEW packages will be installed:
+  btop cpp cpp-14 cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu
+  desktop-file-utils exo-utils gdal-data gdal-plugins libabsl20240722 libaec0
+  libaom3 libarmadillo14 libarpack2t64 libavif16 libayatana-appindicator3-1
+  libayatana-ido3-0.4-0 libayatana-indicator3-7 libblosc1 libbluetooth3
+  libcfitsio10t64 libcharls2 libdav1d7 libdbusmenu-glib4 libdbusmenu-gtk3-4
+  libde265-0 libdisplay-info2 libdouble-conversion3 libdrm-amdgpu1
+  libdrm-common libdrm2 libduktape207 libegl-mesa0 libegl1 libevdev2 libexif12
+  libexo-2-0 libexo-common libfontenc1 libfreexl1 libfyba0t64 libgarcon-1-0
+  libgarcon-common libgarcon-gtk3-1-0 libgav1-1 libgbm1 libgck-2-2 libgcr-4-4
+  libgdal36 libgdcm3.0t64 libgeos-c1t64 libgeos3.13.1 libgeotiff5 libgfortran5
+  libgif7 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0 libgpgme11t64
+  libgpgmepp6t64 libgtk-layer-shell0 libgudev-1.0-0 libhdf4-0-alt libhdf5-310
+  libhdf5-hl-310 libheif-plugin-dav1d libheif-plugin-libde265 libheif1
+  libhwloc15 libice6 libicu76 libimath-3-1-29t64 libimobiledevice-1.0-6
+  libimobiledevice-glue-1.0-0 libinput-bin libinput10 libisl23 libjansson4
+  libkmlbase1t64 libkmldom1t64 libkmlengine1t64 liblapack3
+  liblightdm-gobject-1-0 libllvm19 libltdl7 libmariadb3 libmd4c0
+  libminizip1t64 libmm-glib0 libmpc3 libmpfr6 libmtdev1t64 libndp0 libnetcdf22
+  libnm0 libnma-common libnma0 libnotify4 libnss3 libodbc2 libodbcinst2
+  libogdi4.1 libopencv-core410 libopencv-imgcodecs410 libopencv-imgproc410
+  libopenexr-3-1-30 libopenjp2-7 libpciaccess0 libpcre2-16-0 libplist-2.0-4
+  libpolkit-agent-1-0 libpolkit-gobject-1-0 libpolkit-qt5-1-1 libpoppler147
+  libpq5 libproj25 libqhull-r8.0 libqrencode4 libqt5core5t64 libqt5dbus5t64
+  libqt5gui5t64 libqt5network5t64 libqt5widgets5t64 librav1e0.7 librttopo1
+  libsecret-1-0 libsecret-common libsensors-config libsensors5 libsm6
+  libsnappy1v5 libsocket++1 libspatialite8t64 libstartup-notification0
+  libsvtav1enc2 libsz2 libtbb12 libtbbbind-2-5 libtbbmalloc2 libteamdctl0
+  libthunarx-3-0 libunwind8 libupower-glib3 liburiparser1 libusbmuxd-2.0-7
+  libutempter0 libvte-2.91-0 libvte-2.91-common libvulkan1 libwacom-common
+  libwacom9 libwayland-server0 libwnck-3-0 libwnck-3-common libxaw7
+  libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1
+  libxcb-present0 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-sync1
+  libxcb-util1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xinput0 libxcb-xkb1
+  libxcvt0 libxerces-c3.2t64 libxfce4panel-2.0-4 libxfce4ui-2-0
+  libxfce4ui-common libxfce4util-common libxfce4util7 libxfce4windowing-0-0
+  libxfce4windowing-common libxfconf-0-3 libxfont2 libxkbcommon-x11-0
+  libxkbfile1 libxklavier16 libxmu6 libxmuu1 libxpm4 libxpresent1 libxres1
+  libxshmfence1 libxt6t64 libxtst6 libxxf86vm1 libyuv0 libz3-4 lightdm
+  lightdm-gtk-greeter mariadb-common mesa-libgallium mysql-common
+  network-manager network-manager-applet network-manager-gnome
+  nm-connection-editor polkitd proj-data python3-urllib3 sgml-base thunar
+  thunar-data ukui-polkit unixodbc-common upower x11-common x11-xkb-utils
+  x11-xserver-utils xfce4-appfinder xfce4-clipman xfce4-clipman-plugin
+  xfce4-helpers xfce4-panel xfce4-power-manager xfce4-power-manager-data
+  xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfconf
+  xfdesktop4 xfdesktop4-data xfwm4 xml-core xserver-common xserver-xorg-core
+  xserver-xorg-input-libinput
+0 upgraded, 237 newly installed, 0 to remove and 5 not upgraded.
+Need to get 136 MB of archives.
+After this operation, 575 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 btop arm64 1.3.2-0.1 [416 kB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 libisl23 arm64 0.27-1 [601 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 libmpfr6 arm64 4.2.2-1 [685 kB]
+Get:4 http://deb.debian.org/debian trixie/main arm64 libmpc3 arm64 1.3.1-1+b3 [50.5 kB]
+Get:5 http://deb.debian.org/debian trixie/main arm64 cpp-14-aarch64-linux-gnu arm64 14.2.0-19 [9,169 kB]
+Get:6 http://security.debian.org trixie-security/main arm64 libheif-plugin-libde265 arm64 1.23.6-2~deb13u1 [20.1 kB]
+Get:7 http://security.debian.org trixie-security/main arm64 libheif-plugin-dav1d arm64 1.23.6-2~deb13u1 [22.1 kB]
+Get:8 http://security.debian.org trixie-security/main arm64 libheif1 arm64 1.23.6-2~deb13u1 [710 kB]
+Get:9 http://security.debian.org trixie-security/main arm64 libnss3 arm64 2:3.110-1+deb13u5 [1,291 kB]
+Get:10 http://security.debian.org trixie-security/main arm64 libpcre2-16-0 arm64 10.46-1~deb13u3 [247 kB]
+Get:11 http://security.debian.org trixie-security/main arm64 xserver-common all 2:21.1.16-1.3+deb13u4 [2,410 kB]
+Get:12 http://security.debian.org trixie-security/main arm64 xserver-xorg-core arm64 2:21.1.16-1.3+deb13u4 [3,640 kB]
+Get:13 http://deb.debian.org/debian trixie/main arm64 cpp-14 arm64 14.2.0-19 [1,276 B]
+Get:14 http://deb.debian.org/debian trixie/main arm64 cpp-aarch64-linux-gnu arm64 4:14.2.0-1 [4,832 B]
+Get:15 http://deb.debian.org/debian trixie/main arm64 cpp arm64 4:14.2.0-1 [1,568 B]
+Get:16 http://deb.debian.org/debian trixie/main arm64 desktop-file-utils arm64 0.28-1 [90.1 kB]
+Get:17 http://deb.debian.org/debian trixie/main arm64 libexo-common all 4.20.0-1 [29.4 kB]
+Get:18 http://deb.debian.org/debian trixie/main arm64 libxfce4util-common all 4.20.1-1 [63.6 kB]
+Get:19 http://deb.debian.org/debian trixie/main arm64 libxfce4util7 arm64 4.20.1-1 [37.8 kB]
+Get:20 http://deb.debian.org/debian trixie/main arm64 libexo-2-0 arm64 4.20.0-1 [246 kB]
+Get:21 http://deb.debian.org/debian trixie/main arm64 libxfce4ui-common all 4.20.1-1 [229 kB]
+Get:22 http://deb.debian.org/debian trixie/main arm64 x11-common all 1:7.7+24+deb13u1 [217 kB]
+Get:23 http://deb.debian.org/debian trixie/main arm64 libice6 arm64 2:1.1.1-1 [62.1 kB]
+Get:24 http://deb.debian.org/debian trixie/main arm64 libsm6 arm64 2:1.2.6-1 [36.4 kB]
+Get:25 http://deb.debian.org/debian trixie/main arm64 libxcb-util1 arm64 0.4.1-1 [23.6 kB]
+Get:26 http://deb.debian.org/debian trixie/main arm64 libstartup-notification0 arm64 0.12-8 [20.6 kB]
+Get:27 http://deb.debian.org/debian trixie/main arm64 xfconf arm64 4.20.0-1 [126 kB]
+Get:28 http://deb.debian.org/debian trixie/main arm64 libxfconf-0-3 arm64 4.20.0-1 [44.3 kB]
+Get:29 http://deb.debian.org/debian trixie/main arm64 libxfce4ui-2-0 arm64 4.20.1-1 [75.4 kB]
+Get:30 http://deb.debian.org/debian trixie/main arm64 exo-utils arm64 4.20.0-1 [56.4 kB]
+Get:31 http://deb.debian.org/debian trixie/main arm64 gdal-data all 3.10.3+dfsg-1 [403 kB]
+Get:32 http://deb.debian.org/debian trixie/main arm64 gdal-plugins arm64 3.10.3+dfsg-1 [181 kB]
+Get:33 http://deb.debian.org/debian trixie/main arm64 libabsl20240722 arm64 20240722.0-4 [452 kB]
+Get:34 http://deb.debian.org/debian trixie/main arm64 libaec0 arm64 1.1.3-1+b1 [22.5 kB]
+Get:35 http://deb.debian.org/debian trixie/main arm64 libaom3 arm64 3.12.1-1+deb13u1 [1,671 kB]
+Get:36 http://deb.debian.org/debian trixie/main arm64 libgfortran5 arm64 14.2.0-19 [361 kB]
+Get:37 http://deb.debian.org/debian trixie/main arm64 liblapack3 arm64 3.12.1-6 [1,820 kB]
+Get:38 http://deb.debian.org/debian trixie/main arm64 libarpack2t64 arm64 3.9.1-6 [84.2 kB]
+Get:39 http://deb.debian.org/debian trixie/main arm64 libarmadillo14 arm64 1:14.2.3+dfsg-1 [102 kB]
+Get:40 http://deb.debian.org/debian trixie/main arm64 libdav1d7 arm64 1.5.1-1 [252 kB]
+Get:41 http://deb.debian.org/debian trixie/main arm64 libgav1-1 arm64 0.19.0-3+b1 [491 kB]
+Get:42 http://deb.debian.org/debian trixie/main arm64 librav1e0.7 arm64 0.7.1-9+b2 [662 kB]
+Get:43 http://deb.debian.org/debian trixie/main arm64 libsvtav1enc2 arm64 2.3.0+dfsg-1 [1,558 kB]
+Get:44 http://deb.debian.org/debian trixie/main arm64 libyuv0 arm64 0.0.1904.20250204-1 [137 kB]
+Get:45 http://deb.debian.org/debian trixie/main arm64 libavif16 arm64 1.2.1-1.2 [125 kB]
+Get:46 http://deb.debian.org/debian trixie/main arm64 libayatana-ido3-0.4-0 arm64 0.10.4-1 [51.5 kB]
+Get:47 http://deb.debian.org/debian trixie/main arm64 libayatana-indicator3-7 arm64 0.9.4-1+b1 [30.9 kB]
+Get:48 http://deb.debian.org/debian trixie/main arm64 libdbusmenu-glib4 arm64 18.10.20180917~bzr492+repack1-4 [37.8 kB]
+Get:49 http://deb.debian.org/debian trixie/main arm64 libdbusmenu-gtk3-4 arm64 18.10.20180917~bzr492+repack1-4 [25.5 kB]
+Get:50 http://deb.debian.org/debian trixie/main arm64 libayatana-appindicator3-1 arm64 0.5.94-1 [24.2 kB]
+Get:51 http://deb.debian.org/debian trixie/main arm64 libsnappy1v5 arm64 1.2.2-1 [28.3 kB]
+Get:52 http://deb.debian.org/debian trixie/main arm64 libblosc1 arm64 1.21.5+ds-1+b2 [39.2 kB]
+Get:53 http://deb.debian.org/debian trixie/main arm64 libbluetooth3 arm64 5.82-1.1 [103 kB]
+Get:54 http://deb.debian.org/debian trixie/main arm64 libcfitsio10t64 arm64 4.6.2-2 [524 kB]
+Get:55 http://deb.debian.org/debian trixie/main arm64 libcharls2 arm64 2.4.2-2+b2 [84.7 kB]
+Get:56 http://deb.debian.org/debian trixie/main arm64 libde265-0 arm64 1.0.15-1+deb13u2 [153 kB]
+Get:57 http://deb.debian.org/debian trixie/main arm64 libdisplay-info2 arm64 0.2.0-2 [75.5 kB]
+Get:58 http://deb.debian.org/debian trixie/main arm64 libdouble-conversion3 arm64 3.3.1-1 [37.3 kB]
+Get:59 http://deb.debian.org/debian trixie/main arm64 libdrm-common all 2.4.124-2 [8,288 B]
+Get:60 http://deb.debian.org/debian trixie/main arm64 libdrm2 arm64 2.4.124-2 [38.3 kB]
+Get:61 http://deb.debian.org/debian trixie/main arm64 libdrm-amdgpu1 arm64 2.4.124-2 [21.8 kB]
+Get:62 http://deb.debian.org/debian trixie/main arm64 libduktape207 arm64 2.7.0-2+b2 [127 kB]
+Get:63 http://deb.debian.org/debian trixie/main arm64 libwayland-server0 arm64 1.23.1-3 [33.7 kB]
+Get:64 http://deb.debian.org/debian trixie/main arm64 libz3-4 arm64 4.13.3-1 [7,507 kB]
+Get:65 http://deb.debian.org/debian trixie/main arm64 libllvm19 arm64 1:19.1.7-3+b1 [23.3 MB]
+Get:66 http://deb.debian.org/debian trixie/main arm64 libsensors-config all 1:3.6.2-2 [16.2 kB]
+Get:67 http://deb.debian.org/debian trixie/main arm64 libsensors5 arm64 1:3.6.2-2 [36.4 kB]
+Get:68 http://deb.debian.org/debian trixie/main arm64 libxcb-dri3-0 arm64 1.17.0-2+b1 [107 kB]
+Get:69 http://deb.debian.org/debian trixie/main arm64 libxcb-present0 arm64 1.17.0-2+b1 [106 kB]
+Get:70 http://deb.debian.org/debian trixie/main arm64 libxcb-randr0 arm64 1.17.0-2+b1 [117 kB]
+Get:71 http://deb.debian.org/debian trixie/main arm64 libxcb-sync1 arm64 1.17.0-2+b1 [109 kB]
+Get:72 http://deb.debian.org/debian trixie/main arm64 libxcb-xfixes0 arm64 1.17.0-2+b1 [110 kB]
+Get:73 http://deb.debian.org/debian trixie/main arm64 libxshmfence1 arm64 1.3.3-1 [11.1 kB]
+Get:74 http://deb.debian.org/debian trixie/main arm64 mesa-libgallium arm64 25.0.7-2+deb13u1 [8,033 kB]
+Get:75 http://deb.debian.org/debian trixie/main arm64 libgbm1 arm64 25.0.7-2+deb13u1 [44.1 kB]
+Get:76 http://deb.debian.org/debian trixie/main arm64 libegl-mesa0 arm64 25.0.7-2+deb13u1 [121 kB]
+Get:77 http://deb.debian.org/debian trixie/main arm64 libevdev2 arm64 1.13.4+dfsg-1 [30.4 kB]
+Get:78 http://deb.debian.org/debian trixie/main arm64 libexif12 arm64 0.6.25-1+deb13u1 [417 kB]
+Get:79 http://deb.debian.org/debian trixie/main arm64 libfontenc1 arm64 1:1.1.8-1+b2 [22.5 kB]
+Get:80 http://deb.debian.org/debian trixie/main arm64 libminizip1t64 arm64 1:1.3.dfsg+really1.3.1-1+b1 [52.6 kB]
+Get:81 http://deb.debian.org/debian trixie/main arm64 libfreexl1 arm64 2.0.0-1+b3 [38.3 kB]
+Get:82 http://deb.debian.org/debian trixie/main arm64 libfyba0t64 arm64 4.1.1-11+b1 [107 kB]
+Get:83 http://deb.debian.org/debian trixie/main arm64 libgarcon-common all 4.20.0-1 [64.2 kB]
+Get:84 http://deb.debian.org/debian trixie/main arm64 libgarcon-1-0 arm64 4.20.0-1 [48.7 kB]
+Get:85 http://deb.debian.org/debian trixie/main arm64 libgarcon-gtk3-1-0 arm64 4.20.0-1 [21.1 kB]
+Get:86 http://deb.debian.org/debian trixie/main arm64 libgck-2-2 arm64 4.4.0.1-3 [68.5 kB]
+Get:87 http://deb.debian.org/debian trixie/main arm64 libgcr-4-4 arm64 4.4.0.1-3 [188 kB]
+Get:88 http://deb.debian.org/debian trixie/main arm64 libgeos3.13.1 arm64 3.13.1-1 [885 kB]
+Get:89 http://deb.debian.org/debian trixie/main arm64 libgeos-c1t64 arm64 3.13.1-1 [92.9 kB]
+Get:90 http://deb.debian.org/debian trixie/main arm64 proj-data all 9.6.0-1 [6,303 kB]
+Get:91 http://deb.debian.org/debian trixie/main arm64 libproj25 arm64 9.6.0-1 [1,243 kB]
+Get:92 http://deb.debian.org/debian trixie/main arm64 libgeotiff5 arm64 1.7.4-1 [65.3 kB]
+Get:93 http://deb.debian.org/debian trixie/main arm64 libgif7 arm64 5.2.2-1+deb13u1 [44.1 kB]
+Get:94 http://deb.debian.org/debian trixie/main arm64 libsz2 arm64 1.1.3-1+b1 [8,044 B]
+Get:95 http://deb.debian.org/debian trixie/main arm64 libhdf4-0-alt arm64 4.3.0-1+b1 [238 kB]
+Get:96 http://deb.debian.org/debian trixie/main arm64 libhdf5-310 arm64 1.14.5+repack-3 [1,155 kB]
+Get:97 http://deb.debian.org/debian trixie/main arm64 liburiparser1 arm64 0.9.8+dfsg-2 [42.5 kB]
+Get:98 http://deb.debian.org/debian trixie/main arm64 libkmlbase1t64 arm64 1.3.0-12+b2 [45.8 kB]
+Get:99 http://deb.debian.org/debian trixie/main arm64 libkmldom1t64 arm64 1.3.0-12+b2 [142 kB]
+Get:100 http://deb.debian.org/debian trixie/main arm64 libkmlengine1t64 arm64 1.3.0-12+b2 [72.1 kB]
+Get:101 http://deb.debian.org/debian trixie/main arm64 mysql-common all 5.8+1.1.1 [6,784 B]
+Get:102 http://deb.debian.org/debian trixie/main arm64 mariadb-common all 1:11.8.6-0+deb13u1 [29.5 kB]
+Get:103 http://deb.debian.org/debian trixie/main arm64 libmariadb3 arm64 1:11.8.6-0+deb13u1 [175 kB]
+Get:104 http://deb.debian.org/debian trixie/main arm64 libhdf5-hl-310 arm64 1.14.5+repack-3 [66.1 kB]
+Get:105 http://deb.debian.org/debian trixie/main arm64 libnetcdf22 arm64 1:4.9.3-1 [481 kB]
+Get:106 http://deb.debian.org/debian trixie/main arm64 libltdl7 arm64 2.5.4-4 [415 kB]
+Get:107 http://deb.debian.org/debian trixie/main arm64 libodbc2 arm64 2.3.12-2+deb13u1 [134 kB]
+Get:108 http://deb.debian.org/debian trixie/main arm64 unixodbc-common all 2.3.12-2+deb13u1 [8,732 B]
+Get:109 http://deb.debian.org/debian trixie/main arm64 libodbcinst2 arm64 2.3.12-2+deb13u1 [37.0 kB]
+Get:110 http://deb.debian.org/debian trixie/main arm64 libogdi4.1 arm64 4.1.1+ds-5 [202 kB]
+Get:111 http://deb.debian.org/debian trixie/main arm64 libopenjp2-7 arm64 2.5.3-2.1~deb13u2 [189 kB]
+Get:112 http://deb.debian.org/debian trixie/main arm64 libgpgme11t64 arm64 1.24.2-3 [329 kB]
+Get:113 http://deb.debian.org/debian trixie/main arm64 libgpgmepp6t64 arm64 1.24.2-3 [328 kB]
+Get:114 http://deb.debian.org/debian trixie/main arm64 libpoppler147 arm64 25.03.0-5+deb13u4 [1,914 kB]
+Get:115 http://deb.debian.org/debian trixie/main arm64 libpq5 arm64 17.11-0+deb13u1 [230 kB]
+Get:116 http://deb.debian.org/debian trixie/main arm64 libqhull-r8.0 arm64 2020.2-6+b2 [229 kB]
+Get:117 http://deb.debian.org/debian trixie/main arm64 librttopo1 arm64 1.1.0-4 [166 kB]
+Get:118 http://deb.debian.org/debian trixie/main arm64 libspatialite8t64 arm64 5.1.0-3+b2 [1,610 kB]
+Get:119 http://deb.debian.org/debian trixie/main arm64 libicu76 arm64 76.1-4 [9,524 kB]
+Get:120 http://deb.debian.org/debian trixie/main arm64 libxerces-c3.2t64 arm64 3.2.4+debian-1.3+b2 [787 kB]
+Get:121 http://deb.debian.org/debian trixie/main arm64 libgdal36 arm64 3.10.3+dfsg-1 [7,989 kB]
+Get:122 http://deb.debian.org/debian trixie/main arm64 libsocket++1 arm64 1.12.13+git20131030.5d039ba-1+b2 [73.9 kB]
+Get:123 http://deb.debian.org/debian trixie/main arm64 libgdcm3.0t64 arm64 3.0.24-5+b3 [2,141 kB]
+Get:124 http://deb.debian.org/debian trixie/main arm64 libglvnd0 arm64 1.7.0-1+b2 [41.6 kB]
+Get:125 http://deb.debian.org/debian trixie/main arm64 libxcb-glx0 arm64 1.17.0-2+b1 [123 kB]
+Get:126 http://deb.debian.org/debian trixie/main arm64 libxxf86vm1 arm64 1:1.1.4-1+b4 [19.2 kB]
+Get:127 http://deb.debian.org/debian trixie/main arm64 libvulkan1 arm64 1.4.309.0-1 [127 kB]
+Get:128 http://deb.debian.org/debian trixie/main arm64 libgl1-mesa-dri arm64 25.0.7-2+deb13u1 [45.9 kB]
+Get:129 http://deb.debian.org/debian trixie/main arm64 libglx-mesa0 arm64 25.0.7-2+deb13u1 [142 kB]
+Get:130 http://deb.debian.org/debian trixie/main arm64 libglx0 arm64 1.7.0-1+b2 [31.1 kB]
+Get:131 http://deb.debian.org/debian trixie/main arm64 libgl1 arm64 1.7.0-1+b2 [90.9 kB]
+Get:132 http://deb.debian.org/debian trixie/main arm64 libgtk-layer-shell0 arm64 0.9.0-2 [51.7 kB]
+Get:133 http://deb.debian.org/debian trixie/main arm64 libgudev-1.0-0 arm64 238-6 [13.7 kB]
+Get:134 http://deb.debian.org/debian trixie/main arm64 libhwloc15 arm64 2.12.0-4 [142 kB]
+Get:135 http://deb.debian.org/debian trixie/main arm64 libimath-3-1-29t64 arm64 3.1.12-1+b3 [38.0 kB]
+Get:136 http://deb.debian.org/debian trixie/main arm64 libplist-2.0-4 arm64 2.6.0-2+b1 [46.8 kB]
+Get:137 http://deb.debian.org/debian trixie/main arm64 libimobiledevice-glue-1.0-0 arm64 1.3.1-1 [29.8 kB]
+Get:138 http://deb.debian.org/debian trixie/main arm64 libusbmuxd-2.0-7 arm64 2.1.0-1+b1 [16.4 kB]
+Get:139 http://deb.debian.org/debian trixie/main arm64 libimobiledevice-1.0-6 arm64 1.3.0+git20250228-2 [130 kB]
+Get:140 http://deb.debian.org/debian trixie/main arm64 libwacom-common all 2.14.0-1 [103 kB]
+Get:141 http://deb.debian.org/debian trixie/main arm64 libwacom9 arm64 2.14.0-1 [24.2 kB]
+Get:142 http://deb.debian.org/debian trixie/main arm64 libinput-bin arm64 1.28.1-1+deb13u1 [26.8 kB]
+Get:143 http://deb.debian.org/debian trixie/main arm64 libmtdev1t64 arm64 1.1.7-1 [22.5 kB]
+Get:144 http://deb.debian.org/debian trixie/main arm64 libinput10 arm64 1.28.1-1+deb13u1 [130 kB]
+Get:145 http://deb.debian.org/debian trixie/main arm64 libjansson4 arm64 2.14-2+b3 [39.2 kB]
+Get:146 http://deb.debian.org/debian trixie/main arm64 libxkbfile1 arm64 1:1.1.0-1+b4 [72.4 kB]
+Get:147 http://deb.debian.org/debian trixie/main arm64 libxt6t64 arm64 1:1.2.1-1.2+b2 [173 kB]
+Get:148 http://deb.debian.org/debian trixie/main arm64 libxmu6 arm64 2:1.1.3-3+b4 [55.7 kB]
+Get:149 http://deb.debian.org/debian trixie/main arm64 libxpm4 arm64 1:3.5.17-1+deb13u1 [52.9 kB]
+Get:150 http://deb.debian.org/debian trixie/main arm64 libxaw7 arm64 2:1.0.16-1 [195 kB]
+Get:151 http://deb.debian.org/debian trixie/main arm64 x11-xkb-utils arm64 7.7+9 [149 kB]
+Get:152 http://deb.debian.org/debian trixie/main arm64 libxklavier16 arm64 5.4-5+b2 [41.9 kB]
+Get:153 http://deb.debian.org/debian trixie/main arm64 liblightdm-gobject-1-0 arm64 1.32.0-6+b2 [55.8 kB]
+Get:154 http://deb.debian.org/debian trixie/main arm64 libmd4c0 arm64 0.5.2-2+b1 [46.1 kB]
+Get:155 http://deb.debian.org/debian trixie/main arm64 libmm-glib0 arm64 1.24.0-1+deb13u1 [233 kB]
+Get:156 http://deb.debian.org/debian trixie/main arm64 libndp0 arm64 1.9-1+b1 [12.6 kB]
+Get:157 http://deb.debian.org/debian trixie/main arm64 libnm0 arm64 1.52.1-1 [426 kB]
+Get:158 http://deb.debian.org/debian trixie/main arm64 libnma-common all 1.10.6-5 [136 kB]
+Get:159 http://deb.debian.org/debian trixie/main arm64 libnma0 arm64 1.10.6-5 [82.4 kB]
+Get:160 http://deb.debian.org/debian trixie/main arm64 libnotify4 arm64 0.8.6-1 [25.8 kB]
+Get:161 http://deb.debian.org/debian trixie/main arm64 libtbbbind-2-5 arm64 2022.1.0-1+deb13u1 [13.8 kB]
+Get:162 http://deb.debian.org/debian trixie/main arm64 libtbbmalloc2 arm64 2022.1.0-1+deb13u1 [35.8 kB]
+Get:163 http://deb.debian.org/debian trixie/main arm64 libtbb12 arm64 2022.1.0-1+deb13u1 [67.6 kB]
+Get:164 http://deb.debian.org/debian trixie/main arm64 libopencv-core410 arm64 4.10.0+dfsg-5 [915 kB]
+Get:165 http://deb.debian.org/debian trixie/main arm64 libopencv-imgproc410 arm64 4.10.0+dfsg-5 [993 kB]
+Get:166 http://deb.debian.org/debian trixie/main arm64 libopenexr-3-1-30 arm64 3.1.13-2 [875 kB]
+Get:167 http://deb.debian.org/debian trixie/main arm64 libopencv-imgcodecs410 arm64 4.10.0+dfsg-5 [127 kB]
+Get:168 http://deb.debian.org/debian trixie/main arm64 libpciaccess0 arm64 0.17-3+b3 [51.2 kB]
+Get:169 http://deb.debian.org/debian trixie/main arm64 libpolkit-gobject-1-0 arm64 126-2 [46.3 kB]
+Get:170 http://deb.debian.org/debian trixie/main arm64 libpolkit-agent-1-0 arm64 126-2 [25.4 kB]
+Get:171 http://deb.debian.org/debian trixie/main arm64 libqt5core5t64 arm64 5.15.15+dfsg-6+deb13u1 [1,739 kB]
+Get:172 http://deb.debian.org/debian trixie/main arm64 libqt5dbus5t64 arm64 5.15.15+dfsg-6+deb13u1 [206 kB]
+Get:173 http://deb.debian.org/debian trixie/main arm64 libegl1 arm64 1.7.0-1+b2 [34.0 kB]
+Get:174 http://deb.debian.org/debian trixie/main arm64 libqt5network5t64 arm64 5.15.15+dfsg-6+deb13u1 [652 kB]
+Get:175 http://deb.debian.org/debian trixie/main arm64 libxcb-icccm4 arm64 0.4.2-1 [27.2 kB]
+Get:176 http://deb.debian.org/debian trixie/main arm64 libxcb-image0 arm64 0.4.0-2+b2 [21.9 kB]
+Get:177 http://deb.debian.org/debian trixie/main arm64 libxcb-keysyms1 arm64 0.4.1-1 [16.8 kB]
+Get:178 http://deb.debian.org/debian trixie/main arm64 libxcb-render-util0 arm64 0.3.10-1 [18.5 kB]
+Get:179 http://deb.debian.org/debian trixie/main arm64 libxcb-shape0 arm64 1.17.0-2+b1 [106 kB]
+Get:180 http://deb.debian.org/debian trixie/main arm64 libxcb-xinerama0 arm64 1.17.0-2+b1 [105 kB]
+Get:181 http://deb.debian.org/debian trixie/main arm64 libxcb-xinput0 arm64 1.17.0-2+b1 [130 kB]
+Get:182 http://deb.debian.org/debian trixie/main arm64 libxcb-xkb1 arm64 1.17.0-2+b1 [129 kB]
+Get:183 http://deb.debian.org/debian trixie/main arm64 libxkbcommon-x11-0 arm64 1.7.0-2 [15.2 kB]
+Get:184 http://deb.debian.org/debian trixie/main arm64 libqt5gui5t64 arm64 5.15.15+dfsg-6+deb13u1 [3,199 kB]
+Get:185 http://deb.debian.org/debian trixie/main arm64 libqt5widgets5t64 arm64 5.15.15+dfsg-6+deb13u1 [2,284 kB]
+Get:186 http://deb.debian.org/debian trixie/main arm64 libpolkit-qt5-1-1 arm64 0.200.0-4+b1 [52.4 kB]
+Get:187 http://deb.debian.org/debian trixie/main arm64 libqrencode4 arm64 4.1.1-2 [38.7 kB]
+Get:188 http://deb.debian.org/debian trixie/main arm64 libsecret-common all 0.21.7-1 [27.9 kB]
+Get:189 http://deb.debian.org/debian trixie/main arm64 libsecret-1-0 arm64 0.21.7-1 [102 kB]
+Get:190 http://deb.debian.org/debian trixie/main arm64 libteamdctl0 arm64 1.31-1+b2 [11.4 kB]
+Get:191 http://deb.debian.org/debian trixie/main arm64 thunar-data all 4.20.2-1+deb13u1 [881 kB]
+Get:192 http://deb.debian.org/debian trixie/main arm64 libthunarx-3-0 arm64 4.20.2-1+deb13u1 [119 kB]
+Get:193 http://deb.debian.org/debian trixie/main arm64 libunwind8 arm64 1.8.1-0.1 [55.2 kB]
+Get:194 http://deb.debian.org/debian trixie/main arm64 libupower-glib3 arm64 1.90.9-1 [37.2 kB]
+Get:195 http://deb.debian.org/debian trixie/main arm64 libutempter0 arm64 1.2.1-4 [9,216 B]
+Get:196 http://deb.debian.org/debian trixie/main arm64 libvte-2.91-common arm64 0.80.1-1 [58.9 kB]
+Get:197 http://deb.debian.org/debian trixie/main arm64 libvte-2.91-0 arm64 0.80.1-1 [270 kB]
+Get:198 http://deb.debian.org/debian trixie/main arm64 libxres1 arm64 2:1.2.1-1+b2 [17.5 kB]
+Get:199 http://deb.debian.org/debian trixie/main arm64 libwnck-3-common all 43.2-1 [230 kB]
+Get:200 http://deb.debian.org/debian trixie/main arm64 libwnck-3-0 arm64 43.2-1 [102 kB]
+Get:201 http://deb.debian.org/debian trixie/main arm64 libxcvt0 arm64 0.1.3-1 [5,496 B]
+Get:202 http://deb.debian.org/debian trixie/main arm64 libxfce4windowing-common all 4.20.2-1 [50.0 kB]
+Get:203 http://deb.debian.org/debian trixie/main arm64 libxfce4windowing-0-0 arm64 4.20.2-1 [100 kB]
+Get:204 http://deb.debian.org/debian trixie/main arm64 libxfce4panel-2.0-4 arm64 4.20.4-1 [78.8 kB]
+Get:205 http://deb.debian.org/debian trixie/main arm64 libxfont2 arm64 1:2.0.6-1+deb13u1 [125 kB]
+Get:206 http://deb.debian.org/debian trixie/main arm64 libxmuu1 arm64 2:1.1.3-3+b4 [22.0 kB]
+Get:207 http://deb.debian.org/debian trixie/main arm64 libxpresent1 arm64 1.0.1-1+b2 [9,992 B]
+Get:208 http://deb.debian.org/debian trixie/main arm64 libxtst6 arm64 2:1.2.5-1 [25.7 kB]
+Get:209 http://deb.debian.org/debian trixie/main arm64 lightdm-gtk-greeter arm64 2.0.9-1+b2 [104 kB]
+Get:210 http://deb.debian.org/debian trixie/main arm64 lightdm arm64 1.32.0-6+b2 [158 kB]
+Get:211 http://deb.debian.org/debian trixie/main arm64 network-manager arm64 1.52.1-1 [2,050 kB]
+Get:212 http://deb.debian.org/debian trixie/main arm64 ukui-polkit arm64 1.2.2.2-1.1+b2 [80.3 kB]
+Get:213 http://deb.debian.org/debian trixie/main arm64 nm-connection-editor arm64 1.36.0-3 [805 kB]
+Get:214 http://deb.debian.org/debian trixie/main arm64 network-manager-applet arm64 1.36.0-3 [74.9 kB]
+Get:215 http://deb.debian.org/debian trixie/main arm64 network-manager-gnome arm64 1.36.0-3 [10.5 kB]
+Get:216 http://deb.debian.org/debian trixie/main arm64 sgml-base all 1.31+nmu1 [10.9 kB]
+Get:217 http://deb.debian.org/debian trixie/main arm64 xml-core all 0.19 [20.1 kB]
+Get:218 http://deb.debian.org/debian trixie/main arm64 polkitd arm64 126-2 [119 kB]
+Get:219 http://deb.debian.org/debian trixie/main arm64 python3-urllib3 all 2.3.0-3+deb13u2 [115 kB]
+Get:220 http://deb.debian.org/debian trixie/main arm64 thunar arm64 4.20.2-1+deb13u1 [376 kB]
+Get:221 http://deb.debian.org/debian trixie/main arm64 upower arm64 1.90.9-1 [92.1 kB]
+Get:222 http://deb.debian.org/debian trixie/main arm64 x11-xserver-utils arm64 7.7+11 [156 kB]
+Get:223 http://deb.debian.org/debian trixie/main arm64 xfce4-appfinder arm64 4.20.0-2 [166 kB]
+Get:224 http://deb.debian.org/debian trixie/main arm64 xfce4-clipman arm64 2:1.6.6-1+b1 [164 kB]
+Get:225 http://deb.debian.org/debian trixie/main arm64 xfce4-clipman-plugin arm64 2:1.6.6-1+b1 [37.8 kB]
+Get:226 http://deb.debian.org/debian trixie/main arm64 xfce4-helpers arm64 4.20.1-1 [45.1 kB]
+Get:227 http://deb.debian.org/debian trixie/main arm64 xfce4-panel arm64 4.20.4-1 [812 kB]
+Get:228 http://deb.debian.org/debian trixie/main arm64 xfce4-power-manager-data all 4.20.0-1 [409 kB]
+Get:229 http://deb.debian.org/debian trixie/main arm64 xfce4-power-manager arm64 4.20.0-1 [129 kB]
+Get:230 http://deb.debian.org/debian trixie/main arm64 xfce4-screenshooter arm64 1.11.1-1 [149 kB]
+Get:231 http://deb.debian.org/debian trixie/main arm64 xfce4-settings arm64 4.20.1-1 [906 kB]
+Get:232 http://deb.debian.org/debian trixie/main arm64 xfce4-session arm64 4.20.2-2 [371 kB]
+Get:233 http://deb.debian.org/debian trixie/main arm64 xfce4-terminal arm64 1.1.4-1 [409 kB]
+Get:234 http://deb.debian.org/debian trixie/main arm64 xfdesktop4-data all 4.20.1-1 [1,118 kB]
+Get:235 http://deb.debian.org/debian trixie/main arm64 xfdesktop4 arm64 4.20.1-1 [197 kB]
+Get:236 http://deb.debian.org/debian trixie/main arm64 xfwm4 arm64 4.20.0-1 [463 kB]
+Get:237 http://deb.debian.org/debian trixie/main arm64 xserver-xorg-input-libinput arm64 1.5.0-1 [66.2 kB]
+Preconfiguring packages ...
+Fetched 136 MB in 41s (3,338 kB/s)
+Selecting previously unselected package btop.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32161 files and directories currently installed.)
+Preparing to unpack .../000-btop_1.3.2-0.1_arm64.deb ...
+Unpacking btop (1.3.2-0.1) ...
+Selecting previously unselected package libisl23:arm64.
+Preparing to unpack .../001-libisl23_0.27-1_arm64.deb ...
+Unpacking libisl23:arm64 (0.27-1) ...
+Selecting previously unselected package libmpfr6:arm64.
+Preparing to unpack .../002-libmpfr6_4.2.2-1_arm64.deb ...
+Unpacking libmpfr6:arm64 (4.2.2-1) ...
+Selecting previously unselected package libmpc3:arm64.
+Preparing to unpack .../003-libmpc3_1.3.1-1+b3_arm64.deb ...
+Unpacking libmpc3:arm64 (1.3.1-1+b3) ...
+Selecting previously unselected package cpp-14-aarch64-linux-gnu.
+Preparing to unpack .../004-cpp-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+Unpacking cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package cpp-14.
+Preparing to unpack .../005-cpp-14_14.2.0-19_arm64.deb ...
+Unpacking cpp-14 (14.2.0-19) ...
+Selecting previously unselected package cpp-aarch64-linux-gnu.
+Preparing to unpack .../006-cpp-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+Unpacking cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../007-cpp_4%3a14.2.0-1_arm64.deb ...
+Unpacking cpp (4:14.2.0-1) ...
+Selecting previously unselected package desktop-file-utils.
+Preparing to unpack .../008-desktop-file-utils_0.28-1_arm64.deb ...
+Unpacking desktop-file-utils (0.28-1) ...
+Selecting previously unselected package libexo-common.
+Preparing to unpack .../009-libexo-common_4.20.0-1_all.deb ...
+Unpacking libexo-common (4.20.0-1) ...
+Selecting previously unselected package libxfce4util-common.
+Preparing to unpack .../010-libxfce4util-common_4.20.1-1_all.deb ...
+Unpacking libxfce4util-common (4.20.1-1) ...
+Selecting previously unselected package libxfce4util7:arm64.
+Preparing to unpack .../011-libxfce4util7_4.20.1-1_arm64.deb ...
+Unpacking libxfce4util7:arm64 (4.20.1-1) ...
+Selecting previously unselected package libexo-2-0:arm64.
+Preparing to unpack .../012-libexo-2-0_4.20.0-1_arm64.deb ...
+Unpacking libexo-2-0:arm64 (4.20.0-1) ...
+Selecting previously unselected package libxfce4ui-common.
+Preparing to unpack .../013-libxfce4ui-common_4.20.1-1_all.deb ...
+Unpacking libxfce4ui-common (4.20.1-1) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../014-x11-common_1%3a7.7+24+deb13u1_all.deb ...
+Unpacking x11-common (1:7.7+24+deb13u1) ...
+Selecting previously unselected package libice6:arm64.
+Preparing to unpack .../015-libice6_2%3a1.1.1-1_arm64.deb ...
+Unpacking libice6:arm64 (2:1.1.1-1) ...
+Selecting previously unselected package libsm6:arm64.
+Preparing to unpack .../016-libsm6_2%3a1.2.6-1_arm64.deb ...
+Unpacking libsm6:arm64 (2:1.2.6-1) ...
+Selecting previously unselected package libxcb-util1:arm64.
+Preparing to unpack .../017-libxcb-util1_0.4.1-1_arm64.deb ...
+Unpacking libxcb-util1:arm64 (0.4.1-1) ...
+Selecting previously unselected package libstartup-notification0:arm64.
+Preparing to unpack .../018-libstartup-notification0_0.12-8_arm64.deb ...
+Unpacking libstartup-notification0:arm64 (0.12-8) ...
+Selecting previously unselected package xfconf.
+Preparing to unpack .../019-xfconf_4.20.0-1_arm64.deb ...
+Unpacking xfconf (4.20.0-1) ...
+Selecting previously unselected package libxfconf-0-3:arm64.
+Preparing to unpack .../020-libxfconf-0-3_4.20.0-1_arm64.deb ...
+Unpacking libxfconf-0-3:arm64 (4.20.0-1) ...
+Selecting previously unselected package libxfce4ui-2-0:arm64.
+Preparing to unpack .../021-libxfce4ui-2-0_4.20.1-1_arm64.deb ...
+Unpacking libxfce4ui-2-0:arm64 (4.20.1-1) ...
+Selecting previously unselected package exo-utils.
+Preparing to unpack .../022-exo-utils_4.20.0-1_arm64.deb ...
+Unpacking exo-utils (4.20.0-1) ...
+Selecting previously unselected package gdal-data.
+Preparing to unpack .../023-gdal-data_3.10.3+dfsg-1_all.deb ...
+Unpacking gdal-data (3.10.3+dfsg-1) ...
+Selecting previously unselected package gdal-plugins:arm64.
+Preparing to unpack .../024-gdal-plugins_3.10.3+dfsg-1_arm64.deb ...
+Unpacking gdal-plugins:arm64 (3.10.3+dfsg-1) ...
+Selecting previously unselected package libabsl20240722:arm64.
+Preparing to unpack .../025-libabsl20240722_20240722.0-4_arm64.deb ...
+Unpacking libabsl20240722:arm64 (20240722.0-4) ...
+Selecting previously unselected package libaec0:arm64.
+Preparing to unpack .../026-libaec0_1.1.3-1+b1_arm64.deb ...
+Unpacking libaec0:arm64 (1.1.3-1+b1) ...
+Selecting previously unselected package libaom3:arm64.
+Preparing to unpack .../027-libaom3_3.12.1-1+deb13u1_arm64.deb ...
+Unpacking libaom3:arm64 (3.12.1-1+deb13u1) ...
+Selecting previously unselected package libgfortran5:arm64.
+Preparing to unpack .../028-libgfortran5_14.2.0-19_arm64.deb ...
+Unpacking libgfortran5:arm64 (14.2.0-19) ...
+Selecting previously unselected package liblapack3:arm64.
+Preparing to unpack .../029-liblapack3_3.12.1-6_arm64.deb ...
+Unpacking liblapack3:arm64 (3.12.1-6) ...
+Selecting previously unselected package libarpack2t64:arm64.
+Preparing to unpack .../030-libarpack2t64_3.9.1-6_arm64.deb ...
+Unpacking libarpack2t64:arm64 (3.9.1-6) ...
+Selecting previously unselected package libarmadillo14.
+Preparing to unpack .../031-libarmadillo14_1%3a14.2.3+dfsg-1_arm64.deb ...
+Unpacking libarmadillo14 (1:14.2.3+dfsg-1) ...
+Selecting previously unselected package libdav1d7:arm64.
+Preparing to unpack .../032-libdav1d7_1.5.1-1_arm64.deb ...
+Unpacking libdav1d7:arm64 (1.5.1-1) ...
+Selecting previously unselected package libgav1-1:arm64.
+Preparing to unpack .../033-libgav1-1_0.19.0-3+b1_arm64.deb ...
+Unpacking libgav1-1:arm64 (0.19.0-3+b1) ...
+Selecting previously unselected package librav1e0.7:arm64.
+Preparing to unpack .../034-librav1e0.7_0.7.1-9+b2_arm64.deb ...
+Unpacking librav1e0.7:arm64 (0.7.1-9+b2) ...
+Selecting previously unselected package libsvtav1enc2:arm64.
+Preparing to unpack .../035-libsvtav1enc2_2.3.0+dfsg-1_arm64.deb ...
+Unpacking libsvtav1enc2:arm64 (2.3.0+dfsg-1) ...
+Selecting previously unselected package libyuv0:arm64.
+Preparing to unpack .../036-libyuv0_0.0.1904.20250204-1_arm64.deb ...
+Unpacking libyuv0:arm64 (0.0.1904.20250204-1) ...
+Selecting previously unselected package libavif16:arm64.
+Preparing to unpack .../037-libavif16_1.2.1-1.2_arm64.deb ...
+Unpacking libavif16:arm64 (1.2.1-1.2) ...
+Selecting previously unselected package libayatana-ido3-0.4-0:arm64.
+Preparing to unpack .../038-libayatana-ido3-0.4-0_0.10.4-1_arm64.deb ...
+Unpacking libayatana-ido3-0.4-0:arm64 (0.10.4-1) ...
+Selecting previously unselected package libayatana-indicator3-7:arm64.
+Preparing to unpack .../039-libayatana-indicator3-7_0.9.4-1+b1_arm64.deb ...
+Unpacking libayatana-indicator3-7:arm64 (0.9.4-1+b1) ...
+Selecting previously unselected package libdbusmenu-glib4:arm64.
+Preparing to unpack .../040-libdbusmenu-glib4_18.10.20180917~bzr492+repack1-4_arm64.deb ...
+Unpacking libdbusmenu-glib4:arm64 (18.10.20180917~bzr492+repack1-4) ...
+Selecting previously unselected package libdbusmenu-gtk3-4:arm64.
+Preparing to unpack .../041-libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-4_arm64.deb ...
+Unpacking libdbusmenu-gtk3-4:arm64 (18.10.20180917~bzr492+repack1-4) ...
+Selecting previously unselected package libayatana-appindicator3-1.
+Preparing to unpack .../042-libayatana-appindicator3-1_0.5.94-1_arm64.deb ...
+Unpacking libayatana-appindicator3-1 (0.5.94-1) ...
+Selecting previously unselected package libsnappy1v5:arm64.
+Preparing to unpack .../043-libsnappy1v5_1.2.2-1_arm64.deb ...
+Unpacking libsnappy1v5:arm64 (1.2.2-1) ...
+Selecting previously unselected package libblosc1:arm64.
+Preparing to unpack .../044-libblosc1_1.21.5+ds-1+b2_arm64.deb ...
+Unpacking libblosc1:arm64 (1.21.5+ds-1+b2) ...
+Selecting previously unselected package libbluetooth3:arm64.
+Preparing to unpack .../045-libbluetooth3_5.82-1.1_arm64.deb ...
+Unpacking libbluetooth3:arm64 (5.82-1.1) ...
+Selecting previously unselected package libcfitsio10t64:arm64.
+Preparing to unpack .../046-libcfitsio10t64_4.6.2-2_arm64.deb ...
+Unpacking libcfitsio10t64:arm64 (4.6.2-2) ...
+Selecting previously unselected package libcharls2:arm64.
+Preparing to unpack .../047-libcharls2_2.4.2-2+b2_arm64.deb ...
+Unpacking libcharls2:arm64 (2.4.2-2+b2) ...
+Selecting previously unselected package libde265-0:arm64.
+Preparing to unpack .../048-libde265-0_1.0.15-1+deb13u2_arm64.deb ...
+Unpacking libde265-0:arm64 (1.0.15-1+deb13u2) ...
+Selecting previously unselected package libdisplay-info2:arm64.
+Preparing to unpack .../049-libdisplay-info2_0.2.0-2_arm64.deb ...
+Unpacking libdisplay-info2:arm64 (0.2.0-2) ...
+Selecting previously unselected package libdouble-conversion3:arm64.
+Preparing to unpack .../050-libdouble-conversion3_3.3.1-1_arm64.deb ...
+Unpacking libdouble-conversion3:arm64 (3.3.1-1) ...
+Selecting previously unselected package libdrm-common.
+Preparing to unpack .../051-libdrm-common_2.4.124-2_all.deb ...
+Unpacking libdrm-common (2.4.124-2) ...
+Selecting previously unselected package libdrm2:arm64.
+Preparing to unpack .../052-libdrm2_2.4.124-2_arm64.deb ...
+Unpacking libdrm2:arm64 (2.4.124-2) ...
+Selecting previously unselected package libdrm-amdgpu1:arm64.
+Preparing to unpack .../053-libdrm-amdgpu1_2.4.124-2_arm64.deb ...
+Unpacking libdrm-amdgpu1:arm64 (2.4.124-2) ...
+Selecting previously unselected package libduktape207:arm64.
+Preparing to unpack .../054-libduktape207_2.7.0-2+b2_arm64.deb ...
+Unpacking libduktape207:arm64 (2.7.0-2+b2) ...
+Selecting previously unselected package libwayland-server0:arm64.
+Preparing to unpack .../055-libwayland-server0_1.23.1-3_arm64.deb ...
+Unpacking libwayland-server0:arm64 (1.23.1-3) ...
+Selecting previously unselected package libz3-4:arm64.
+Preparing to unpack .../056-libz3-4_4.13.3-1_arm64.deb ...
+Unpacking libz3-4:arm64 (4.13.3-1) ...
+Selecting previously unselected package libllvm19:arm64.
+Preparing to unpack .../057-libllvm19_1%3a19.1.7-3+b1_arm64.deb ...
+Unpacking libllvm19:arm64 (1:19.1.7-3+b1) ...
+Selecting previously unselected package libsensors-config.
+Preparing to unpack .../058-libsensors-config_1%3a3.6.2-2_all.deb ...
+Unpacking libsensors-config (1:3.6.2-2) ...
+Selecting previously unselected package libsensors5:arm64.
+Preparing to unpack .../059-libsensors5_1%3a3.6.2-2_arm64.deb ...
+Unpacking libsensors5:arm64 (1:3.6.2-2) ...
+Selecting previously unselected package libxcb-dri3-0:arm64.
+Preparing to unpack .../060-libxcb-dri3-0_1.17.0-2+b1_arm64.deb ...
+Unpacking libxcb-dri3-0:arm64 (1.17.0-2+b1) ...
+Selecting previously unselected package libxcb-present0:arm64.
+Preparing to unpack .../061-libxcb-present0_1.17.0-2+b1_arm64.deb ...
+Unpacking libxcb-present0:arm64 (1.17.0-2+b1) ...
+Selecting previously unselected package libxcb-randr0:arm64.
+Preparing to unpack .../062-libxcb-randr0_1.17.0-2+b1_arm64.deb ...
+Unpacking libxcb-randr0:arm64 (1.17.0-2+b1) ...
+Selecting previously unselected package libxcb-sync1:arm64.
+Preparing to unpack .../063-libxcb-sync1_1.17.0-2+b1_arm64.deb ...
+Unpacking libxcb-sync1:arm64 (1.17.0-2+b1) ...
+Selecting previously unselected package libxcb-xfixes0:arm64.
+Preparing to unpack .../064-libxcb-xfixes0_1.17.0-2+b1_arm64.deb ...
+Unpacking libxcb-xfixes0:arm64 (1.17.0-2+b1) ...
+Selecting previously unselected package libxshmfence1:arm64.
+Preparing to unpack .../065-libxshmfence1_1.3.3-1_arm64.deb ...
+Unpacking libxshmfence1:arm64 (1.3.3-1) ...
+Selecting previously unselected package mesa-libgallium:arm64.
+Preparing to unpack .../066-mesa-libgallium_25.0.7-2+deb13u1_arm64.deb ...
+Unpacking mesa-libgallium:arm64 (25.0.7-2+deb13u1) ...
+Selecting previously unselected package libgbm1:arm64.
+Preparing to unpack .../067-libgbm1_25.0.7-2+deb13u1_arm64.deb ...
+Unpacking libgbm1:arm64 (25.0.7-2+deb13u1) ...
+Selecting previously unselected package libegl-mesa0:arm64.
+Preparing to unpack .../068-libegl-mesa0_25.0.7-2+deb13u1_arm64.deb ...
+Unpacking libegl-mesa0:arm64 (25.0.7-2+deb13u1) ...
+Selecting previously unselected package libevdev2:arm64.
+Preparing to unpack .../069-libevdev2_1.13.4+dfsg-1_arm64.deb ...
+Unpacking libevdev2:arm64 (1.13.4+dfsg-1) ...
+Selecting previously unselected package libexif12:arm64.
+Preparing to unpack .../070-libexif12_0.6.25-1+deb13u1_arm64.deb ...
+Unpacking libexif12:arm64 (0.6.25-1+deb13u1) ...
+Selecting previously unselected package libfontenc1:arm64.
+Preparing to unpack .../071-libfontenc1_1%3a1.1.8-1+b2_arm64.deb ...
+Unpacking libfontenc1:arm64 (1:1.1.8-1+b2) ...
+Selecting previously unselected package libminizip1t64:arm64.
+Preparing to unpack .../072-libminizip1t64_1%3a1.3.dfsg+really1.3.1-1+b1_arm64.deb ...
+Unpacking libminizip1t64:arm64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Selecting previously unselected package libfreexl1:arm64.
+Preparing to unpack .../073-libfreexl1_2.0.0-1+b3_arm64.deb ...
+Unpacking libfreexl1:arm64 (2.0.0-1+b3) ...
+Selecting previously unselected package libfyba0t64:arm64.
+Preparing to unpack .../074-libfyba0t64_4.1.1-11+b1_arm64.deb ...
+Unpacking libfyba0t64:arm64 (4.1.1-11+b1) ...
+Selecting previously unselected package libgarcon-common.
+Preparing to unpack .../075-libgarcon-common_4.20.0-1_all.deb ...
+Unpacking libgarcon-common (4.20.0-1) ...
+Selecting previously unselected package libgarcon-1-0:arm64.
+Preparing to unpack .../076-libgarcon-1-0_4.20.0-1_arm64.deb ...
+Unpacking libgarcon-1-0:arm64 (4.20.0-1) ...
+Selecting previously unselected package libgarcon-gtk3-1-0:arm64.
+Preparing to unpack .../077-libgarcon-gtk3-1-0_4.20.0-1_arm64.deb ...
+Unpacking libgarcon-gtk3-1-0:arm64 (4.20.0-1) ...
+Selecting previously unselected package libgck-2-2:arm64.
+Preparing to unpack .../078-libgck-2-2_4.4.0.1-3_arm64.deb ...
+Unpacking libgck-2-2:arm64 (4.4.0.1-3) ...
+Selecting previously unselected package libgcr-4-4:arm64.
+Preparing to unpack .../079-libgcr-4-4_4.4.0.1-3_arm64.deb ...
+Unpacking libgcr-4-4:arm64 (4.4.0.1-3) ...
+Selecting previously unselected package libgeos3.13.1:arm64.
+Preparing to unpack .../080-libgeos3.13.1_3.13.1-1_arm64.deb ...
+Unpacking libgeos3.13.1:arm64 (3.13.1-1) ...
+Selecting previously unselected package libgeos-c1t64:arm64.
+Preparing to unpack .../081-libgeos-c1t64_3.13.1-1_arm64.deb ...
+Unpacking libgeos-c1t64:arm64 (3.13.1-1) ...
+Selecting previously unselected package proj-data.
+Preparing to unpack .../082-proj-data_9.6.0-1_all.deb ...
+Unpacking proj-data (9.6.0-1) ...
+Selecting previously unselected package libproj25:arm64.
+Preparing to unpack .../083-libproj25_9.6.0-1_arm64.deb ...
+Unpacking libproj25:arm64 (9.6.0-1) ...
+Selecting previously unselected package libgeotiff5:arm64.
+Preparing to unpack .../084-libgeotiff5_1.7.4-1_arm64.deb ...
+Unpacking libgeotiff5:arm64 (1.7.4-1) ...
+Selecting previously unselected package libgif7:arm64.
+Preparing to unpack .../085-libgif7_5.2.2-1+deb13u1_arm64.deb ...
+Unpacking libgif7:arm64 (5.2.2-1+deb13u1) ...
+Selecting previously unselected package libsz2:arm64.
+Preparing to unpack .../086-libsz2_1.1.3-1+b1_arm64.deb ...
+Unpacking libsz2:arm64 (1.1.3-1+b1) ...
+Selecting previously unselected package libhdf4-0-alt:arm64.
+Preparing to unpack .../087-libhdf4-0-alt_4.3.0-1+b1_arm64.deb ...
+Unpacking libhdf4-0-alt:arm64 (4.3.0-1+b1) ...
+Selecting previously unselected package libhdf5-310:arm64.
+Preparing to unpack .../088-libhdf5-310_1.14.5+repack-3_arm64.deb ...
+Unpacking libhdf5-310:arm64 (1.14.5+repack-3) ...
+Selecting previously unselected package libheif-plugin-libde265:arm64.
+Preparing to unpack .../089-libheif-plugin-libde265_1.23.6-2~deb13u1_arm64.deb ...
+Unpacking libheif-plugin-libde265:arm64 (1.23.6-2~deb13u1) ...
+Selecting previously unselected package libheif-plugin-dav1d:arm64.
+Preparing to unpack .../090-libheif-plugin-dav1d_1.23.6-2~deb13u1_arm64.deb ...
+Unpacking libheif-plugin-dav1d:arm64 (1.23.6-2~deb13u1) ...
+Selecting previously unselected package libheif1:arm64.
+Preparing to unpack .../091-libheif1_1.23.6-2~deb13u1_arm64.deb ...
+Unpacking libheif1:arm64 (1.23.6-2~deb13u1) ...
+Selecting previously unselected package liburiparser1:arm64.
+Preparing to unpack .../092-liburiparser1_0.9.8+dfsg-2_arm64.deb ...
+Unpacking liburiparser1:arm64 (0.9.8+dfsg-2) ...
+Selecting previously unselected package libkmlbase1t64:arm64.
+Preparing to unpack .../093-libkmlbase1t64_1.3.0-12+b2_arm64.deb ...
+Unpacking libkmlbase1t64:arm64 (1.3.0-12+b2) ...
+Selecting previously unselected package libkmldom1t64:arm64.
+Preparing to unpack .../094-libkmldom1t64_1.3.0-12+b2_arm64.deb ...
+Unpacking libkmldom1t64:arm64 (1.3.0-12+b2) ...
+Selecting previously unselected package libkmlengine1t64:arm64.
+Preparing to unpack .../095-libkmlengine1t64_1.3.0-12+b2_arm64.deb ...
+Unpacking libkmlengine1t64:arm64 (1.3.0-12+b2) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../096-mysql-common_5.8+1.1.1_all.deb ...
+Unpacking mysql-common (5.8+1.1.1) ...
+Selecting previously unselected package mariadb-common.
+Preparing to unpack .../097-mariadb-common_1%3a11.8.6-0+deb13u1_all.deb ...
+Unpacking mariadb-common (1:11.8.6-0+deb13u1) ...
+Selecting previously unselected package libmariadb3:arm64.
+Preparing to unpack .../098-libmariadb3_1%3a11.8.6-0+deb13u1_arm64.deb ...
+Unpacking libmariadb3:arm64 (1:11.8.6-0+deb13u1) ...
+Selecting previously unselected package libhdf5-hl-310:arm64.
+Preparing to unpack .../099-libhdf5-hl-310_1.14.5+repack-3_arm64.deb ...
+Unpacking libhdf5-hl-310:arm64 (1.14.5+repack-3) ...
+Selecting previously unselected package libnetcdf22:arm64.
+Preparing to unpack .../100-libnetcdf22_1%3a4.9.3-1_arm64.deb ...
+Unpacking libnetcdf22:arm64 (1:4.9.3-1) ...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
