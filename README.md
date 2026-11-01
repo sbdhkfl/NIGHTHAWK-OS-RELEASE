@@ -72,3 +72,9 @@ and `BUILD-REPORT.md` (how it was built and exactly what was verified).
   flashed cards.
 - UFW is installed but **not enabled**; enable it after you can log in:
   `sudo ufw allow ssh && sudo ufw enable`.
+
+## Multi-platform roadmap
+
+NIGHTHAWK OS is being developed toward multiple device families, but this release is **only for the Orange Pi Zero 3**. The roadmap includes Raspberry Pi, Intel/AMD PCs, virtual machines, other ARM64 boards, and Android devices. Each target needs a separate compatible build and testing; none of those future targets can use this Orange Pi image as-is.
+
+See the [multi-platform architecture plan](https://github.com/sbdhkfl/NIGHTHAWK-OS/blob/main/docs/MULTI-PLATFORM.md) for target status and release criteria.
