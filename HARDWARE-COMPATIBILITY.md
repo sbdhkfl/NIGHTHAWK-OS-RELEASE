@@ -2,6 +2,13 @@
 
 Target board: **Orange Pi Zero 3**, SoC **Allwinner H618**.
 
+> **Multi-platform roadmap:** NIGHTHAWK's source repository tracks future targets
+> including Raspberry Pi, Intel/AMD PCs, virtual machines, other ARM64 boards,
+> and Android devices. These are not supported by this 1.0 image. Each requires
+> a separate build and validation process. See the
+> [multi-platform architecture plan](https://github.com/sbdhkfl/NIGHTHAWK-OS/blob/main/docs/MULTI-PLATFORM.md).
+
+
 ## Status legend
 
 - **In image** — present and configured; verified by inspecting the built image.
