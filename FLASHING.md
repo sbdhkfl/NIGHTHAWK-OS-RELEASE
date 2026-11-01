@@ -2,49 +2,82 @@
 
 You need:
 
-- `nighthawk-os-1.0-orangepi-zero3-arm64.img` (1.77 GB)
+- The compressed NIGHTHAWK OS release archive (download it from the release **Assets** section)
 - A microSD card, **8 GB minimum** (16 GB recommended), Class 10 / A1+
 - A card reader
 - Optional: HDMI cable, USB keyboard, 5 V / 3 A USB-C power supply
 
-The disk image is not stored in this GitHub repository because it exceeds
-GitHub's 100 MB file limit. Obtain or rebuild the image before following these
-steps.
+> **Important:** Download the compressed archive, extract it, and flash the
+> resulting `nighthawk-os-1.0-orangepi-zero3-arm64.img` file. Do not select
+> the compressed archive in balenaEtcher or another flashing program.
 
-> The image is a raw disk image. Do **not** copy the file onto a mounted
-> filesystem and do **not** extract it. Write it to the *device*.
+## 1. Download and extract the image
 
-## 1. Verify the download
+1. Open the [NIGHTHAWK OS 1.0 Releases page](https://github.com/sbdhkfl/NIGHTHAWK-OS-RELEASE/releases).
+2. Under the latest compatible release, find **Assets** and download the image archive.
+3. Extract the archive:
+   - **Windows:** Right-click the downloaded archive and choose **7-Zip → Extract Here** or **Extract to...**. If Windows does not show an extraction option, install [7-Zip](https://www.7-zip.org/).
+   - **macOS:** Double-click a `.zip` or `.gz` archive. For a `.7z` archive, use an archive utility that supports 7z.
+   - **Linux:** Use your file manager's **Extract** option, or use the matching command:
+     - `.zip`: `unzip archive-name.zip`
+     - `.7z`: `7z x archive-name.7z`
+     - `.gz`: `gzip -dk archive-name.img.gz`
+4. Confirm that the extracted file is named
+   `nighthawk-os-1.0-orangepi-zero3-arm64.img`.
 
-```bash
-sha256sum nighthawk-os-1.0-orangepi-zero3-arm64.img
-# expected: 126312ebe591737c114bf8b420f55bc0def6838de5588182ee515ffc77d26885
+If the archive contains a folder, open it and locate the `.img` file inside.
+Keep the extracted image; this is the file you will flash.
+
+## 2. Verify the extracted image
+
+Verify the **extracted .img file**, not the compressed archive.
+
+Expected SHA256:
+
+```text
+126312ebe591737c114bf8b420f55bc0def6838de5588182ee515ffc77d26885
 ```
 
 Windows PowerShell:
 
 ```powershell
-Get-FileHash .\nighthawk-os-1.0-orangepi-zero3-arm64.img -Algorithm SHA256
+Get-FileHash .\\nighthawk-os-1.0-orangepi-zero3-arm64.img -Algorithm SHA256
 ```
 
-## 2. Write the image
+Linux:
+
+```bash
+sha256sum nighthawk-os-1.0-orangepi-zero3-arm64.img
+```
+
+macOS:
+
+```bash
+shasum -a 256 nighthawk-os-1.0-orangepi-zero3-arm64.img
+```
+
+Compare the result with the expected SHA256 above. Do not flash the image if
+the checksum does not match; download the archive again.
+
+## 3. Write the image
 
 ### Option A — balenaEtcher (Windows/macOS/Linux, easiest)
 
-1. Select the `.img` file.
-2. Select the microSD card (**double-check the drive letter**).
-3. Flash, then let it verify.
+1. Open balenaEtcher.
+2. Select the **extracted `.img` file** (not the `.zip`, `.7z`, or `.gz` archive).
+3. Select the microSD card (**double-check the drive**).
+4. Flash, then let it verify.
 
 ### Option B — Raspberry Pi Imager
 
-"Choose OS" → "Use custom" → pick the `.img` → select the card → Write.
+Choose OS → Use custom → select the **extracted `.img` file** → select the card → Write.
 
 ### Option C — `dd` (Linux/macOS)
 
 ```bash
 lsblk                     # identify the card, e.g. /dev/sdX (NOT /dev/sdX1)
 sudo umount /dev/sdX* 2>/dev/null
-sudo dd if=nighthawk-os-1.0-orangepi-zero3-arm64.img of=/dev/sdX bs=4M \
+sudo dd if=nighthawk-os-1.0-orangepi-zero3-arm64.img of=/dev/sdX bs=4M \\
      status=progress conv=fsync
 sync
 ```
@@ -53,9 +86,10 @@ On macOS: use `/dev/rdiskN` instead of `/dev/diskN`.
 
 ### Option D — Windows (no extra tools)
 
-`dd`-style writing needs Etcher/Imager; `copy` and Explorer will not work.
+Use balenaEtcher or Raspberry Pi Imager. File Explorer's copy command will
+not write a bootable disk image to the card.
 
-## 3. First boot
+## 4. First boot
 
 1. Insert the card into the Orange Pi Zero 3.
 2. Connect HDMI and USB keyboard (recommended), and Ethernet if available.
@@ -73,7 +107,7 @@ On macOS: use `/dev/rdiskN` instead of `/dev/diskN`.
 > process can run without a password. Once you finish it, the auto-login
 > override is removed and normal logins apply.
 
-## 4. After first boot
+## 5. After first boot
 
 ```bash
 sudo apt update && sudo apt upgrade      # refresh from Debian + Kali
@@ -87,10 +121,10 @@ Optional Kali tooling, pulled from the pinned Kali channel:
 sudo apt install -t kali-rolling <package>
 ```
 
-## 5. Re-flashing
+## 6. Re-flashing
 
-Re-flash the same image at any time; the card is fully overwritten. Keep the
-original `.img` and its checksum — nothing on the card is needed to rebuild.
+Re-flash the same extracted image at any time; the card is fully overwritten.
+Keep the original extracted `.img` and its checksum.
 
 ## Card size note
 
