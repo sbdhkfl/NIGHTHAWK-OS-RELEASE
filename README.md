@@ -62,16 +62,34 @@ be pulled explicitly with `apt-get install -t kali-rolling <pkg>`.
 Full details: `FLASHING.md`, `HARDWARE-COMPATIBILITY.md`, `TROUBLESHOOTING.md`,
 and `BUILD-REPORT.md` (how it was built and exactly what was verified).
 
-## Default security posture
+## Initial login and default credentials
 
-- No pre-configured user account and no auto-join Wi-Fi credentials.
-- The console starts the Armbian first-login wizard as root; the wizard forces
-  a new root password and creation of a normal user before the desktop is used.
+For the current NIGHTHAWK OS R3 image, the initial local-console credentials are:
+
+| Field | Initial value |
+|---|---|
+| Username | `root` |
+| Password | `1234` |
+
+**Security warning:** These are public, temporary first-login credentials—not a secure password. Anyone who knows them and has access to the console can log in. Change the root password immediately after the first login with `passwd`. Do not expose this default account to a network, and do not enable password-based root SSH.
+
+Create a separate everyday user and grant administrator access:
+
+```bash
+adduser <your-username>
+usermod -aG sudo <your-username>
+```
+
+Log out and sign in as that user for normal work. Use `sudo` only when administration is needed.
+
 - SSH: `PermitRootLogin no`, `PasswordAuthentication no` (key-based only).
   SSH host keys are regenerated on first boot, so nothing is shared between
   flashed cards.
 - UFW is installed but **not enabled**; enable it after you can log in:
   `sudo ufw allow ssh && sudo ufw enable`.
+
+Older images or locally rebuilt images may use different credentials; check the
+release notes for the exact image version.
 
 ## Multi-platform roadmap
 
