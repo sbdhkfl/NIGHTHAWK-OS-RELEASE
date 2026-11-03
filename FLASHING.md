@@ -96,16 +96,24 @@ not write a bootable disk image to the card.
 3. Power on with a 5 V / 3 A supply. First boot takes 1–3 minutes: the
    filesystem is expanded to the card size, then the console shows the
    **NIGHTHAWK / Armbian first-login wizard**.
-4. In the wizard:
-   - set a new **root** password,
-   - create your **user** account (this replaces the generic defaults),
-   - optionally set the timezone.
-5. Log in at the LightDM greeter with that user.
-6. Join Wi-Fi with the tray applet or `nmtui` in a terminal.
+4. At the initial local-console login, use:
+   - **Username:** `root`
+   - **Password:** `1234`
+5. Immediately change the temporary root password:
+   ```bash
+   passwd
+   ```
+6. Create your own everyday account and grant it sudo access:
+   ```bash
+   adduser <your-username>
+   usermod -aG sudo <your-username>
+   ```
+7. Log out and sign in at the LightDM greeter with your new account.
+8. Join Wi-Fi with the tray applet or `nmtui` in a terminal.
 
-> The console auto-logs in as root **only until the wizard completes**, so the
-> process can run without a password. Once you finish it, the auto-login
-> override is removed and normal logins apply.
+> **Security warning:** `root / 1234` is a public, temporary default. Change it
+> immediately and never enable password-based root SSH or expose this default
+> credential to a network. Use your personal account for everyday work.
 
 ## 5. After first boot
 
