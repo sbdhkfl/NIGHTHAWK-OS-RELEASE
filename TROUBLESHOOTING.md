@@ -46,6 +46,10 @@ Common causes:
   aside: `mv ~/.config/xfce4 ~/.config/xfce4.bak` and log in again.
 
 ## No Wi-Fi
+## No Wi-Fi
+
+**Check the board revision first:** NIGHTHAWK OS recommends the Orange Pi Zero 3 **R2**. Wi-Fi support on the R1 hardware revision is limited/unreliable. If you are choosing a board for NIGHTHAWK, use R2. On R1, use Ethernet as the reliable fallback where possible.
+
 
 ```bash
 rfkill list
