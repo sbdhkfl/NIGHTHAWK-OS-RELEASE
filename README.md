@@ -4,6 +4,8 @@ A lightweight, security-focused desktop image for the **Orange Pi Zero 3**
 (Allwinner H618, ARM64) built on the Armbian/Debian 13 (trixie) boot chain with
 the **Kali rolling package channel** added for security tooling.
 
+> **Recommended hardware revision:** Use the **Orange Pi Zero 3 R2**. The R1 board revision has limited/unreliable Wi-Fi support with NIGHTHAWK OS, while R2 provides better Wi-Fi support. If built-in Wi-Fi matters, choose R2 rather than R1.
+
 | Item | Value |
 |---|---|
 | Image file after extraction | `nighthawk-os-1.0-orangepi-zero3-arm64.img` |
