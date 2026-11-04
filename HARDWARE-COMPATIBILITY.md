@@ -2,6 +2,8 @@
 
 Target board: **Orange Pi Zero 3**, SoC **Allwinner H618**.
 
+> **Board revision recommendation:** Use the **Orange Pi Zero 3 R2**. The R1 revision has limited/unreliable Wi-Fi support; R2 is the recommended revision for better built-in Wi-Fi support. This is a hardware-revision recommendation, not a separate NIGHTHAWK OS image version.
+
 > **Multi-platform roadmap:** NIGHTHAWK's source repository tracks future targets
 > including Raspberry Pi, Intel/AMD PCs, virtual machines, other ARM64 boards,
 > and Android devices. These are not supported by this 1.0 image. Each requires
