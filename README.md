@@ -1,4 +1,6 @@
-# NIGHTHAWK OS 1.0 — Orange Pi Zero 3 (ARM64)
+# NIGHTHAWK OS — Platform Releases
+
+This repository contains downloadable NIGHTHAWK OS images for two separate hardware families. Choose the correct image for your device.
 
 A lightweight, security-focused desktop image for the **Orange Pi Zero 3**
 (Allwinner H618, ARM64) built on the Armbian/Debian 13 (trixie) boot chain with
@@ -64,37 +66,35 @@ be pulled explicitly with `apt-get install -t kali-rolling <pkg>`.
 Full details: `FLASHING.md`, `HARDWARE-COMPATIBILITY.md`, `TROUBLESHOOTING.md`,
 and `BUILD-REPORT.md` (how it was built and exactly what was verified).
 
-## Initial login and default credentials
+## Initial login credentials — choose by platform
 
-For the current NIGHTHAWK OS R3 image, the initial local-console credentials are:
+### PC / laptop image — Release 3 (x86_64)
 
-| Field | Initial value |
+The graphical live-session login uses:
+
+| Field | Value |
 |---|---|
-| Username | `root` |
-| Password | `1234` |
+| Username | `user` |
+| Password | `live` |
 
-**Security warning:** These are public, temporary first-login credentials—not a secure password. Anyone who knows them and has access to the console can log in. Change the root password immediately after the first login with `passwd`. Do not expose this default account to a network, and do not enable password-based root SSH.
+These are public default credentials for the **PC live session**. They are not the Orange Pi credentials. If you keep using this account, change its password after logging in. For an installed system, create a personal account during installation or first setup and use that account for everyday work.
 
-Create a separate everyday user and grant administrator access:
+### Orange Pi Zero 3 images — Releases 1 and 2 (ARM64)
 
-```bash
-adduser <your-username>
-usermod -aG sudo <your-username>
-```
+The Orange Pi images use their own board-specific first-boot setup. Follow the Orange Pi instructions in this README and `FLASHING.md`; do not use the PC `user` / `live` credentials for the ARM64 image.
 
-Log out and sign in as that user for normal work. Use `sudo` only when administration is needed.
+### Security notes
 
-- SSH: `PermitRootLogin no`, `PasswordAuthentication no` (key-based only).
-  SSH host keys are regenerated on first boot, so nothing is shared between
-  flashed cards.
-- UFW is installed but **not enabled**; enable it after you can log in:
-  `sudo ufw allow ssh && sudo ufw enable`.
+- Do not enable password-based root SSH.
+- Create a personal non-root account for everyday administration and grant sudo access only as needed.
+- UFW is installed but **not enabled** in the documented ARM image; enable it after setup if appropriate: `sudo ufw allow ssh && sudo ufw enable`.
 
-Older images or locally rebuilt images may use different credentials; check the
-release notes for the exact image version.
+## Platform releases
 
-## Multi-platform roadmap
+- **Release 1:** Orange Pi Zero 3, ARM64, without Wi-Fi.
+- **Release 2:** Orange Pi Zero 3, ARM64, with Wi-Fi.
+- **Release 3:** Intel/AMD desktops and laptops, x86_64 PC ISO.
 
-NIGHTHAWK OS is being developed toward multiple device families, but this release is **only for the Orange Pi Zero 3**. The roadmap includes Raspberry Pi, Intel/AMD PCs, virtual machines, other ARM64 boards, and Android devices. Each target needs a separate compatible build and testing; none of those future targets can use this Orange Pi image as-is.
+The PC ISO and Orange Pi images are separate builds. Never flash an ARM64 image to a PC or the x86_64 ISO to an Orange Pi. Hardware compatibility depends on the specific machine; Secure Boot and firmware requirements are described in the PC release notes.
 
 See the [multi-platform architecture plan](https://github.com/sbdhkfl/NIGHTHAWK-OS/blob/main/docs/MULTI-PLATFORM.md) for target status and release criteria.
